@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name="Nguyen Van A"
+        var address="Ha Noi"
+        console.log(name);
+        console.log(address);
+        console.log(typeof name);
+        var mess="Hello \"Nguyen Van A\""
+        console.log(mess);
+        var fisrtName = "Nguyen"
+        var lastName = "Van A"
+        var fullName = fisrtName+" "+lastName
+        console.log(fullName);
+        // thuoc tinh kiem tra do dai "length"
+        console.log(fullName.length);
+        // phuong thuc method indexOf
+        console.log(fullName.indexOf("Van"));
+        console.log(fullName.lastIndexOf("b"));
+        // concat
+        var fullName1=fisrtName.concat("",lastName);
+        console.log(fullName1)
+        // cat chuoi
+        // 1. slice(vi tri bat dau, vi tri ket thuc);
+        console.log(fullName1.slice(-5,-1));
+        var slicestr=fullName1.slice(0,6);
+        console.log(slicestr.length)
+        // substring() khong nhan tham so am
+        // substr(vi tri bat dau, do dai chuoi can cat)
+        console.log(fullName1.substr(0,6))
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+h3 {
+    text-align: center;
+}
+.size1 {
+    width: 60%;
+    height: 400px;
+}
+.size2 {
+    width: 40%;
+    height: 200px;
+}
+.size2_2 {
+    width: 40%;
+    height: 400px;
+    padding-left: 15px;
+    float: left;
+}
+.size3 {
+    width: 33.33%;
+    height: 400px;
+}
+.size4 {
+    width: 33.33%;
+    height: 400px;
+    padding-left: 15px;
+}
+.red {
+    background-color: red;
+    float: left;
+}
+.green {
+    background-color: green;
+    float: right;
+}
+.blue {
+    background-color: blue;
+    float: right;
+}
+.clear-float {
+    clear: both;
+}
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}

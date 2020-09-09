@@ -1,0 +1,3177 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:title" content="Thông báo tuyển sinh lớp Java Web Fullstack ">
+    <meta property="og:description" content="Tháng 9/2020, Techmaster Vietnam dự kiến khai giảng lớp lộ trình Java Web Fullstack, ngoài việc độc lập nền tảng, phong cách &#34;lập trình hướng đối tượng&#34; của Java và sự hấp dẫn rất cao đối với các nhà tuyển dụng IT khiến Java trở thành một ngôi sao sáng chói trên thị trường tuyển dụng việc làm hiện nay.
+">
+    <meta name="Description" content="Tháng 9/2020, Techmaster Vietnam dự kiến khai giảng lớp lộ trình Java Web Fullstack, ngoài việc độc lập nền tảng, phong cách &#34;lập trình hướng đối tượng&#34; của Java và sự hấp dẫn rất cao đối với các nhà tuyển dụng IT khiến Java trở thành một ngôi sao sáng chói trên thị trường tuyển dụng việc làm hiện nay.
+">
+    <meta property="og:image" content="https://techmaster.vn/media/static/6734/bt487pk51co41h2qcnvg">
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="https://techmaster.vn/posts/35997/thong-bao-tuyen-sinh-lop-java-web-fullstack">
+    <meta property="og:type" content="article">
+    <meta property="fb:app_id" content="290270177727593">
+    <meta property="og:site_name" content="techmaster.vn">
+    <meta property="og:locale" content="vi_VN">
+    <title>Techmaster Việt Nam</title>
+    
+    <link rel="stylesheet" href="/resources/bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+
+    
+    
+    
+    <script src="https://apis.google.com/js/platform.js?onload=init" defer></script>
+    <link rel="shortcut icon" type="image/png" href="/resources/image/favicon.ico" />
+
+    
+
+    
+    
+    
+
+    
+    <script async>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-31629610-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+
+    
+    <script async>
+        window.onLoadCallback = function(){
+            gapi.auth2.init({
+                client_id: "1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com"
+            });
+        }
+    </script>
+    
+
+    
+    <script async>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/vi_VN/fbevents.js');
+        fbq('init', '1043327282441146');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1043327282441146&ev=PageView&noscript=1" />
+    </noscript>
+    
+
+
+    <style>
+        *{box-sizing:border-box}:focus{outline:0!important}.techmaster-font-open-sans{font-family:'Open Sans',sans-serif}html{font-family:Roboto,sans-serif;font-size:16px;color:#464646;background-color:#f4f7fa}body{font-family:Roboto,sans-serif;font-size:16px;color:#464646;overflow-y:scroll;background-color:#f4f7fa}.footer{font-size:14px}.container{max-width:1250px}.body-content{padding-top:3rem;padding-bottom:3rem}.btn-green{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#26a69a;transition:.5s;text-align:center;border-radius:4px}.btn-green:hover{color:#fff;background-color:#26a69ac7}.btn-red{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#f44336;transition:.5s;text-align:center;border-radius:4px}.btn-red:hover{color:#fff;background-color:#f44336bf}.btn-white{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#464646;background-color:#fff;transition:.5s;text-align:center;border-radius:4px;border:1px solid #e5e5e5}.btn-white:hover{background-color:#f9f9f9}.btn-blue{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#3c78e8;transition:.5s;text-align:center;border-radius:4px}.btn-blue:hover{color:#fff;background-color:#3c78e8de}.btn-green{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#66bb6a;transition:.5s;text-align:center;border-radius:4px}.btn-green:hover{color:#fff;background-color:#66bb6ade}#header{background-color:#34465c;box-shadow:0 4px 4px 0 rgba(0,0,0,.25)}.breadcrum-div{margin-bottom:15px}.breadcrum-div a{color:#464646;font-size:1rem}.breadcrum-div .bc{padding:0 1rem;font-size:.6rem}
+    </style>
+</head>
+
+<body>
+    
+    <script type='text/javascript' async>
+        (function(){
+            var s1=document.createElement('script'),s0=document.getElementsByTagName('script')[0];
+            s1.async=true;
+            s1.src='//tr.topdevvn.com/js/follow.js';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    
+
+    <script>
+        (function() {
+            
+            
+            
+            
+            
+
+            var cssFontawesome = document.createElement('link');
+            cssFontawesome.href = '/resources/fontawesome/all.min.css';
+            cssFontawesome.rel = 'stylesheet';
+            cssFontawesome.type = 'text/css';
+            document.head.appendChild(cssFontawesome);
+
+            var cssToastr = document.createElement('link');
+            cssToastr.href = '/resources/toastr/toastr.min.css';
+            cssToastr.rel = 'stylesheet';
+            cssToastr.type = 'text/css';
+            document.head.appendChild(cssToastr);
+
+            var cssCarouseller = document.createElement('link');
+            cssCarouseller.href = '/resources/carouseller/carouseller.css';
+            cssCarouseller.rel = 'stylesheet';
+            cssCarouseller.type = 'text/css';
+            document.head.appendChild(cssCarouseller);
+
+            var cssFancyBox = document.createElement('link');
+            cssFancyBox.href = '/resources/css/jquery.fancybox.min.css';
+            cssFancyBox.rel = 'stylesheet';
+            cssFancyBox.type = 'text/css';
+            document.head.appendChild(cssFancyBox);
+
+            var cssTechmasterMedia = document.createElement('link');
+            cssTechmasterMedia.href = 'https://techmaster.vn/media/resources/css/style.css';
+            cssTechmasterMedia.rel = 'stylesheet';
+            cssTechmasterMedia.type = 'text/css';
+            document.head.appendChild(cssTechmasterMedia);
+
+        })();
+    </script>
+
+    <script src="/resources/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/resources/bootstrap/bootstrap.min.js" ></script>
+    <script src="/resources/toastr/toastr.min.js"></script>
+    <script src="/resources/carouseller/carouseller.min.js"></script>
+    <script src="/resources/js/moment.min.js"></script>
+    <script src="/resources/js/vi.js"></script>
+
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/resources/js/bootbox.min.js"></script>
+    <script src="/resources/js/bootbox.locales.min.js"></script>
+
+    <script src="/resources/js/jquery.toc.min.js"></script>
+
+    
+    <script>
+        $(function () {
+			var e = document.createElement('script'); e.async = true;
+			e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+			document.getElementById('fb-root').appendChild(e);
+            toastr.options.preventDuplicates = true;
+		})
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '290270177727593',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.2',
+                channelURL : '',
+				status     : true,
+				cookie     : true,
+				oauth      : true,
+            });
+        };
+
+        
+        
+        
+        
+        
+        
+        
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'))
+    </script>
+
+    
+    <div id="fb-root"></div>
+    <div class="fb-customerchat" logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn ?" 
+        logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn ?" page_id="224779447588038" 
+        greeting_dialog_display="hide" theme_color="#0084ff">
+    </div>
+
+    
+    <div class="container-fluid" id="header">
+        
+<header>
+	<style type="text/css">
+		.navbar {
+			border: none!important;
+			padding-top: 0;
+			padding-bottom: 0;
+			justify-content: space-between!important
+		}
+
+		.logo-brand img {
+			width: 120px
+		}
+
+		.parent-menu.desktop {
+			height: 100%;
+			flex: initial
+		}
+
+		.parent-menu.desktop .list-menu {
+			margin-bottom: 0!important;
+			list-style-type: none;
+			display: flex;
+			align-items: center
+		}
+
+		.desktop.parent-menu .parent-menu-item {
+			color: #fff;
+			margin: 0 10px 0 10px;
+			text-transform: uppercase;
+			position: relative;
+			min-height: 60px;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			font-size: 1.1rem
+		}
+
+		.nav-indicator {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 5px;
+			background-color: #fff
+		}
+
+		.nav-padding {
+			padding: 0 3px
+		}
+
+		.desktop.parent-menu li:last-child {
+			margin-right: 0
+		}
+
+		.shopping-cart-top-menu {
+			font-size: 1.4rem!important;
+			padding-right: 1rem;
+			cursor: pointer
+		}
+
+		.user-top-menu {
+			padding-left: 1rem;
+			font-size: 1.4rem!important;
+			cursor: pointer
+		}
+
+		.parent-menu a {
+			color: #fff
+		}
+
+		.desktop.parent-menu li:hover>a {
+			text-decoration: none;
+			color: #c4c4c4
+		}
+
+		.parent-menu .dropdown-menu a {
+			color: #464646;
+			text-decoration: none;
+		}
+
+		.parent-menu .dropdown-menu li:hover a {
+			color: #fff
+		}
+
+		.navbar-toggler {
+			outline: 0!important
+		}
+
+		.count-cart-item {
+			position: absolute;
+			top: -10px;
+			left: 20px;
+			background-color: #26a69a
+		}
+
+		.dropdown-menu.active {
+			display: flex
+		}
+
+		.track-menu.active {
+			display: flex
+		}
+
+		.modal-dialog {
+			margin-top: 5%
+		}
+		#advisory-modal .modal-banner {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			background-color: #1cb2ed;
+			position: relative;
+		}
+		#advisory-modal .modal-banner .close {
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			border: 1px solid #000;
+			width: 30px;
+			height: 30px;
+			line-height: 20px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		#advisory-modal .modal-header {
+			padding: 1rem 1.5rem;
+			border-bottom: none;
+		}
+		#advisory-modal h5 {
+			margin-top: 0 !important;
+		}
+		#advisory-modal .modal__main-title{
+			font-size: 24px !important;
+		}
+		#advisory-modal .modal__sub-title{
+			font-size: 1rem;
+			font-weight: 400;
+			display: block;
+    		margin: .5rem 0;
+		}
+		#advisory-modal .modal-body {
+			padding: 1rem 1.5rem;
+			padding-top: 0;
+		}
+		#advisory-modal .modal-body input {
+			width: 100%;
+			border: 1px solid #ccc;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 1rem;
+			transition: all .3s ease-out;
+			color: #464646;
+		}
+		#advisory-modal .modal-body textarea {
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid #ccc;
+			user-select: none;
+			resize: none;
+			padding: 1rem;
+			color: #464646;
+			transition: all .3s ease-out;
+		}
+		#advisory-modal .modal-body input:focus, #advisory-modal .modal-body textarea:focus {
+			border: 1px solid #34465c;
+		}
+		#advisory-modal .advisory__btns {
+			margin-top: 1rem;
+		}
+		#advisory-modal .advisory__btns button {
+			display: inline-block;
+			outline: none;
+			cursor: pointer;
+			text-decoration: none !important;
+			position: relative;
+			z-index: 20;
+			overflow: hidden;
+		}
+		#advisory-modal .advisory__btns .btn {
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			-ms-border-radius: 2px;
+			border-radius: 2px;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+			transition: 0.5s;
+			padding: 8px 25px !important;
+			box-shadow: none;
+			border: none;
+		}
+		#advisory-modal .advisory__btns button:nth-child(1) {
+			border: 1px solid #34465c;
+			color: #34465c;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2) {
+			position: relative;
+			border: 1px solid #34465c;
+			background-color: #34465c;
+			color: #fff;
+			margin-left: .5rem;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2):after {
+			background: #fff;
+			content: "";
+			height: 155px;
+			left: -75px;
+			opacity: .2;
+			position: absolute;
+			top: -50px;
+			transform: rotate(35deg);
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			width: 50px;
+			z-index: -10;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2):hover {
+			color: #fff;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2):hover:after {
+			left: 120%;
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+		}
+		::placeholder {
+			font-size: 14px;
+		}
+		.input__row {
+		position: relative;
+		margin-bottom: 10px;
+		}
+
+		.input__row.success input {
+		border-color: #2ecc71;
+		}
+
+		.input__row.error input {
+		border-color: #e74c3c;
+		}
+
+		.input__row i {
+		visibility: hidden;
+		position: absolute;
+		top: 13px;
+		right: 10px;
+		}
+
+		.input__row.success i.fa-check-circle {
+		color: #2ecc71;
+		visibility: visible;
+		}
+
+		.input__row.error i.fa-exclamation-circle {
+		color: #e74c3c;
+		visibility: visible;
+		}
+
+		.input__row small {
+		color: #e74c3c;
+		position: absolute;
+		bottom: -6px;
+		left: 0;
+		visibility: hidden;
+		}
+
+		.input__row.error small {
+		visibility: visible;
+		}
+		#forgot-password .modal-content,
+		#sign-in-div,
+		#sign-up-div {
+			padding: 3rem
+		}
+
+		#modal-signin .nav-tabs .nav-link {
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			text-align: center;
+			color: #464646;
+			background-color: #1e3c740f;
+			padding: 1rem
+		}
+
+		#modal-signin .nav-tabs .nav-link.active {
+			background-color: #fff
+		}
+
+		.modal-login-item {
+			margin-bottom: 2rem
+		}
+
+		.modal-login-item input {
+			border: none;
+			border-bottom: 1px solid #9e9e9e;
+			width: 100%
+		}
+
+		.modal-login-item-half {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 5px
+		}
+
+		.btn-login-modal {
+			letter-spacing: .5px;
+			border-radius: 4px;
+			padding: .5rem 1rem;
+			width: 100%;
+			text-transform: uppercase
+		}
+
+		#overlay {
+			position: fixed;
+			background-color: #000;
+			opacity: .7;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 998;
+			display: none;
+			transition: 1s;
+			transition-timing-function: ease
+		}
+
+		.mobile {
+			display: none
+		}
+
+		#forgot-password {
+			display: none
+		}
+
+		.checkbox-remember-me {
+			display: block;
+			position: relative;
+			padding-left: 25px;
+			margin-bottom: 12px
+		}
+
+		.checkbox-remember-me input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0
+		}
+
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20px;
+			width: 20px;
+			background-color: #1e3c741f
+		}
+
+		.checkbox-remember-me input:checked~.checkmark {
+			background-color: #3c78e8
+		}
+
+		.checkmark:after {
+			content: "";
+			position: absolute;
+			display: none
+		}
+
+		.checkbox-remember-me input:checked~.checkmark:after {
+			display: block
+		}
+
+		.checkbox-remember-me .checkmark:after {
+			left: 8px;
+			top: 4px;
+			width: 5px;
+			height: 10px;
+			border: solid #fff;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg)
+		}
+
+		#sign-in-div .fab {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			color: #fff;
+			overflow: hidden;
+			margin: 0 10px 0 10px
+		}
+
+		#sign-in-div .fab img {
+			height: 100%;
+			width: 40px
+		}
+
+		.user-dropdown-avatar {
+			overflow: hidden;
+			padding-left: 1rem;
+			cursor: pointer;
+			width: 3rem;
+			height: 2rem
+		}
+
+		.user-dropdown-avatar img {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%
+		}
+
+		.dropdown-menu {
+			top: 100%;
+			position: absolute;
+			left: auto;
+			right: 0;
+			display: none;
+			flex-flow: column;
+			width: 200px;
+			padding: 0;
+			box-shadow: rgba(0, 0, 0, .15) 0 0 10px;
+			border: none;
+			margin-top: .25rem
+		}
+
+		.dropdown-menu a,
+		.track-menu a {
+			text-decoration: none
+		}
+
+		.dropdown-menu li {
+			width: 100%;
+			text-align: center;
+			color: #464646!important;
+			padding: .7rem 1rem;
+			cursor: pointer;
+			text-transform: none
+		}
+
+		.dropdown-menu li:hover {
+			background-color: #c4c4c4;
+			color: #fff!important
+		}
+
+		.track-menu {
+			border-radius: 4px;
+			background-color: #fff;
+			margin-top: .25rem;
+			background-clip: padding-box;
+			list-style: none;
+			text-align: left;
+			font-size: 1rem;
+			float: left;
+			z-index: 1000;
+			top: 100%;
+			width: 500px;
+			position: absolute;
+			display: none;
+			flex-flow: column;
+			padding: .5rem 0;
+			box-shadow: rgba(0, 0, 0, .15) 0 0 10px
+		}
+
+		.track-menu li {
+			width: 100%;
+			padding: .7rem 1rem;
+			cursor: pointer;
+			text-transform: none
+		}
+
+		.track-menu a {
+			color: #464646!important
+		}
+
+		.track-menu a:hover {
+			color: #3c78e8!important
+		}
+
+		.shopping-cart-mobile {
+			cursor: pointer;
+			position: fixed;
+			height: 45pt;
+			width: 45pt;
+			padding: 0;
+			z-index: 900;
+			text-align: center;
+			bottom: 70pt;
+			right: 18pt;
+			color: #fff;
+			border-radius: 50%;
+			background-color: #26a69a;
+			box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+			-webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .15)
+		}
+
+		.shopping-cart-mobile .fa-shopping-cart {
+			position: absolute;
+			top: 14pt;
+			right: 9pt;
+			font-size: 30px
+		}
+
+		.count-cart-item-mobile {
+			position: absolute;
+			font-size: 1.2rem;
+			top: -15pt;
+			right: -2pt;
+			color: #464646;
+			background-color: transparent
+		}
+
+		.parent-menu a {
+			font-size: .95rem!important
+		}
+
+		.fb_customer_chat_bounce_in_v2 {
+			bottom: 113pt!important
+		}
+
+		@media (max-width:1199px) {
+			.desktop.parent-menu .parent-menu-item {
+				margin: 0 5px 0 5px
+			}
+		}
+
+		@media (max-width:1366px) {
+			.logo-brand img {
+				width: 100px
+			}
+			.desktop.parent-menu .parent-menu-item {
+				min-height: 54px
+			}
+			.nav-indicator {
+				height: 4px
+			}
+			.parent-menu a {
+				font-size: .9rem!important
+			}
+		}
+
+		@media (max-width:991px) {
+			.navbar {
+				padding: 15px 10px
+			}
+			.user-dropdown-avatar {
+				padding-left: 0;
+				text-align: center
+			}
+			.logo-brand {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%)
+			}
+			.parent-menu.mobile {
+				font-size: 1rem;
+				position: fixed;
+				width: 250px;
+				height: 100%;
+				left: -250px;
+				z-index: 999;
+				background-color: #fff;
+				top: 0;
+				align-items: center;
+				transition: .4s
+			}
+			.parent-menu.mobile ul {
+				padding: 0
+			}
+			.parent-menu.mobile li {
+				height: 60px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 10px 25px
+			}
+			.parent-menu.mobile a {
+				color: #464646
+			}
+			.parent-menu.mobile .active {
+				background-color: #c4c4c4
+			}
+			.parent-menu.mobile .active a {
+				color: #fff
+			}
+			.parent-menu.mobile a:hover {
+				text-decoration: none
+			}
+			.desktop,
+			.nav-indicator {
+				display: none
+			}
+			.mobile {
+				display: block
+			}
+		}
+
+		@media (min-width:576px) {
+			#modal-signin .modal-dialog {
+				max-width: 400px
+			}
+		}
+
+		@media (max-width:576px) {
+			.shopping-cart-mobile {
+				width: 50px;
+				height: 50px
+			}
+			.shopping-cart-mobile .fa-shopping-cart {
+				position: absolute;
+				top: 11pt;
+				right: 7pt;
+				font-size: 27px
+			}
+		}
+
+		#advisory-modal input {
+			border: none;
+			border-bottom: 1px solid #dee2e6;
+			width: 100%
+		}
+
+		#advisory-modal input:not(:last-child) {
+			margin-bottom: 1rem
+		}
+
+		.admin-page,
+		.teacher-page {
+			display: none
+		}
+
+		.required-info-body {
+			padding: 1.5rem;
+			border-radius: 4px;
+			background-color: #f2f8fd;
+			text-align: center
+		}
+
+		.required-info-footer {
+			padding: .5rem 1.5rem;
+			border-top: 1px solid #dedede
+		}
+
+		.required-info-icon {
+			color: grey;
+			margin-bottom: .4rem
+		}
+
+		#required-info-input {
+			margin-top: 1.5rem
+		}
+	</style>
+
+	
+	<div class="nav-bar">
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+				<i class="fas fa-bars" style="color: white"></i>
+			</button>
+			<div class="logo-brand">
+				<a href="/">
+					<img src="/resources/image/new_logo.png" alt="logo">
+				</a>
+			</div>
+
+			<div class="user-nav mobile">
+				
+				<div class="user-dropdown-avatar" onclick="ShowUserMenu(this)"
+					data-dropdown="dropdown-user-menu-mobile">
+					<img src=""
+						onError="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';" alt="Avatar"
+						class="navbar-user-avatar-img">
+				</div>
+				<ul class="dropdown-menu" id="dropdown-user-menu-mobile" style="margin-right: 15px">
+					<li class="admin-page" onclick="GoToAdminSite()"><span>Trang quản trị</span></li>
+					<li class="teacher-page" onclick="GoToTeacherSite()"><span>Trang giảng viên</span></li>
+					<li class="choose-active-order"><span>Kích hoạt đơn hàng</span></li>
+					<li class="choose-user-classes"><span>Lớp học của tôi</span></li>
+					<li class="choose-user-profile"><span>Hồ sơ cá nhân</span></li>
+					<li class="choose-sign-out"><span>Đăng xuất</span></li>
+				</ul>
+				
+			</div>
+			<div class="btn mobile shopping-cart-mobile" style="display:none" >
+				<a href="/gio-hang" style="color: white">
+					<div style="position: relative; line-height: 75px">
+						<i class="fas fa-shopping-cart"></i>
+						<span class="count-cart-item count-cart-item-mobile">0</span>
+					</div>
+				</a>
+			</div>
+			<div class="parent-menu desktop">
+				<ul class="list-menu">
+					
+					
+					<li class="parent-menu-item"  onclick="ShowSubMenu(this)"
+						data-dropdown="submenu-dropdown-0" >
+						<a  class="nav-padding">
+							<span>Lộ trình&ensp;<i class="fas fa-caret-down"></i></span>
+						</a>
+						
+						<ul class="dropdown-menu" id="submenu-dropdown-0">
+							
+							<a href="/lo-trinh">
+								<li><span>Thực tập 9 tháng</span></li>
+							</a>
+							
+							<a href="/lo-trinh/foundation">
+								<li><span>Nền tảng lập trình</span></li>
+							</a>
+							
+							<a href="/lo-trinh/front-end">
+								<li><span>Front End &#43; React</span></li>
+							</a>
+							
+							<a href="/lo-trinh/mobile">
+								<li><span>Di động React Native</span></li>
+							</a>
+							
+							<a href="/lo-trinh/java-fullstack">
+								<li><span>Java Spring Boot FullStack</span></li>
+							</a>
+							
+							<a href="/lo-trinh/tester">
+								<li><span>Tester</span></li>
+							</a>
+							
+						</ul>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/khoa-hoc/phong-lab" >
+						<a href="/khoa-hoc/phong-lab"  class="nav-padding">
+							<span>Phòng lab</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/khoa-hoc/truc-tuyen" >
+						<a href="/khoa-hoc/truc-tuyen"  class="nav-padding">
+							<span>Trực tuyến</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/san-pham-hoc-vien" >
+						<a href="/san-pham-hoc-vien"  class="nav-padding">
+							<span>Sản phẩm học viên</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/trungtam/lich-khai-giang" >
+						<a href="/trungtam/lich-khai-giang"  class="nav-padding">
+							<span>Khai giảng</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/posts" >
+						<a href="/posts"  class="nav-padding">
+							<span>Blog</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/trai-nghiem" >
+						<a href="/trai-nghiem"  class="nav-padding">
+							<span>Trải nghiệm</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="GoToSite(this)"
+						data-href="/viec-lam" >
+						<a href="/viec-lam"  class="nav-padding">
+							<span>Việc làm</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item"  onclick="ShowSubMenu(this)"
+						data-dropdown="submenu-dropdown-8" >
+						<a  class="nav-padding">
+							<span>Chúng tôi&ensp;<i class="fas fa-caret-down"></i></span>
+						</a>
+						
+						<ul class="dropdown-menu" id="submenu-dropdown-8">
+							
+							<a href="/trungtam/trung-tam">
+								<li><span>Trung tâm</span></li>
+							</a>
+							
+							<a href="/trungtam/quy-dinh-chung">
+								<li><span>Quy định chung</span></li>
+							</a>
+							
+							<a href="/trungtam/giang-vien">
+								<li><span>Giảng viên</span></li>
+							</a>
+							
+							<a href="/trungtam/huong-dan-mua-khoa-hoc">
+								<li><span>Hướng dẫn đăng ký học</span></li>
+							</a>
+							
+						</ul>
+						
+					</li>
+					
+					
+					<li class="parent-menu-item">
+						<div style="position: relative;">
+							<a href="/gio-hang">
+								<i class="fas fa-shopping-cart shopping-cart-top-menu"></i>
+							</a>
+							<span class="badge badge-success count-cart-item">0</span>
+						</div>
+						
+						<div class="user-dropdown-avatar" onclick="ShowUserMenu(this)"
+							data-dropdown="dropdown-user-menu">
+							<img src=""
+								onError="this.onerror=null;this.src='/resources/image/anonymous-user.jpg';" alt="Avatar"
+								class="navbar-user-avatar-img">
+						</div>
+						<ul class="dropdown-menu" id="dropdown-user-menu">
+							<li class="admin-page" onclick="GoToAdminSite()"><span>Trang quản trị</span></li>
+							<li class="teacher-page" onclick="GoToTeacherSite()"><span>Trang giảng viên</span></li>
+							<li class="choose-active-order"><span>Kích hoạt đơn hàng</span></li>
+							<li class="choose-user-classes"><span>Lớp học của tôi</span></li>
+							<li class="choose-user-profile"><span>Hồ sơ cá nhân</span></li>
+							<li class="choose-sign-out"><span>Đăng xuất</span></li>
+						</ul>
+						
+					</li>
+				</ul>
+			</div>
+
+			<div class="modal fade" id="modal-signin" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item" style="flex: 1">
+								<a class="nav-link active" id="sign-in-tab" data-toggle="tab" href="#sign-in-div"
+									role="tab">Đăng nhập</a>
+							</li>
+							<li class="nav-item" style="flex: 1">
+								<a class="nav-link" id="sign-up-tab" data-toggle="tab" href="#sign-up-div"
+									role="tab">Đăng ký</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="sign-in-div" role="tabpanel">
+								<form>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Email" id="sign-in-email" required>
+									</div>
+									<div class="modal-login-item">
+										<input type="password" placeholder="Password" id="sign-in-password" required>
+									</div>
+									<div class="modal-login-item-half">
+										<label style="display:none" class="checkbox-remember-me">Nhớ tài khoản
+											<input type="checkbox" id="sign-in-remember">
+											<span class="checkmark"></span>
+										</label>
+										<div style="cursor: pointer;" onclick="openForgotPassword()">
+											<i class="fas fa-question-circle"></i> Quên mật khẩu</div>
+									</div>
+									<div style="margin-bottom: 2rem;">
+										<button type="button" class="btn btn-green btn-login-modal"
+											id="btn-sign-in">Đăng nhập</button>
+									</div>
+									<div class="text-center" style="margin-bottom: 1rem;">
+										Hoặc đăng nhập bằng
+									</div>
+									<div class="text-center">
+										<div class="fab google-sign-in">
+											<img src="/resources/image/google.png" alt="google_sign_in" >
+										</div>
+										<div class="fab facebook-sign-in">
+											<img src="/resources/image/facebook.png" alt="facebook_sign_in" >
+										</div>
+										<div class="fab github-sign-in">
+											<img src="/resources/image/github-sign.svg" alt="github_sign_in" >
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade show" id="sign-up-div" role="tabpanel">
+								<form>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Họ tên" id="sign-up-fullname" required>
+									</div>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Email" id="sign-up-email" required>
+									</div>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Điện thoại" id="sign-up-phone" required>
+									</div>
+									<div class="modal-login-item">
+										<input type="password" placeholder="Mật khẩu" id="sign-up-password" required>
+									</div>
+									<div class="modal-login-item">
+										<input type="password" placeholder="Nhập lại mật khẩu"
+											id="sign-up-retype-password" required>
+									</div>
+									<div class="modal-login-item">
+										<button type="button" class="btn btn-green btn-login-modal"
+											id="btn-sign-up">Đăng ký</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="forgot-password" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<form class="modal-login-form">
+							<div style="padding-top: 1px" class="modal-login-item text-center">
+								<h2>Quên mật khẩu</h2>
+							</div>
+							<div class="modal-login-item">
+								<input type="text" placeholder="Email" id="forgot-password-email" required>
+							</div>
+							<button type="button" class="btn btn-green btn-login-modal" id="btn-forgot-password">Gửi
+								mail trợ giúp</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="parent-menu mobile" id="mySidenav" style="overflow-y: auto">
+				<ul>
+					<li class="parent-menu-item">
+						<a href="/">
+							<span>Trang chủ</span>
+						</a>
+					</li>
+					
+					
+					<li class="parent-menu-item"  onclick="ShowSubMenu(this)"
+						data-dropdown="submenu-dropdown-mobile-0" >
+						<a >
+							<span>Lộ trình&ensp;<i class="fas fa-caret-down"></i></span>
+						</a>
+					</li>
+					
+					<li class="parent-menu-item" style="height: auto; padding-top: 0; display: none;"
+						id="submenu-dropdown-mobile-0" data-name="submenu-dropdown-mobile">
+						<div style="padding-left: 1.5rem">
+							
+							<a href="/lo-trinh">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Thực tập 9 tháng</span>
+								</div>
+							</a>
+							
+							<a href="/lo-trinh/foundation">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Nền tảng lập trình</span>
+								</div>
+							</a>
+							
+							<a href="/lo-trinh/front-end">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Front End &#43; React</span>
+								</div>
+							</a>
+							
+							<a href="/lo-trinh/mobile">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Di động React Native</span>
+								</div>
+							</a>
+							
+							<a href="/lo-trinh/java-fullstack">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Java Spring Boot FullStack</span>
+								</div>
+							</a>
+							
+							<a href="/lo-trinh/tester">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Tester</span>
+								</div>
+							</a>
+							
+						</div>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/khoa-hoc/phong-lab" >
+							<span>Phòng lab&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/khoa-hoc/truc-tuyen" >
+							<span>Trực tuyến&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/san-pham-hoc-vien" >
+							<span>Sản phẩm học viên&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/trungtam/lich-khai-giang" >
+							<span>Khai giảng&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/posts" >
+							<span>Blog&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/trai-nghiem" >
+							<span>Trải nghiệm&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" >
+						<a href="/viec-lam" >
+							<span>Việc làm&ensp;</span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item"  onclick="ShowSubMenu(this)"
+						data-dropdown="submenu-dropdown-mobile-8" >
+						<a >
+							<span>Chúng tôi&ensp;<i class="fas fa-caret-down"></i></span>
+						</a>
+					</li>
+					
+					<li class="parent-menu-item" style="height: auto; padding-top: 0; display: none;"
+						id="submenu-dropdown-mobile-8" data-name="submenu-dropdown-mobile">
+						<div style="padding-left: 1.5rem">
+							
+							<a href="/trungtam/trung-tam">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Trung tâm</span>
+								</div>
+							</a>
+							
+							<a href="/trungtam/quy-dinh-chung">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Quy định chung</span>
+								</div>
+							</a>
+							
+							<a href="/trungtam/giang-vien">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Giảng viên</span>
+								</div>
+							</a>
+							
+							<a href="/trungtam/huong-dan-mua-khoa-hoc">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Hướng dẫn đăng ký học</span>
+								</div>
+							</a>
+							
+						</div>
+					</li>
+					
+				
+					
+				</ul>
+			</div>
+		</nav>
+
+		<div class="blank_block" id="overlay">
+		</div>
+	</div>
+
+	<div class="modal fade" id="advisory-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-banner">
+					<img src="/resources/image/new_logo.png" alt="logo_hoc_la_co_viec">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">
+						<span class="modal__main-title">
+							Tư vấn khoá học
+						</span>
+						<span class="modal__sub-title">
+							Điền và gửi thông tin cá nhân để được tư vấn miễn phí về các chương trình học.
+						</span>						
+					</h5>
+				</div>
+				<div class="modal-body">
+					<div class="input__row">
+						<input type="text" placeholder="Họ tên" id="advisory-name" required>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div>
+					<div class="input__row">
+						<input type="email" placeholder="Email" id="advisory-email" required>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div><div class="input__row">
+						<input type="phone" placeholder="Số điện thoại" id="advisory-phone" required>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div><div class="input__row">
+						<textarea placeholder="Ghi chú" id="advisory-note"></textarea>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div>
+					<div style="text-align: right" class="advisory__btns">
+						<button type="button" class="btn btn-white" data-dismiss="modal">Huỷ</button>
+						<button type="button" class="btn btn-blue btn-submit-advisory" id="btn-submit-advisory">Gửi</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="required-info-update" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="required-info-body">
+					<i class="far fa-user-circle fa-3x required-info-icon"></i>
+					<div class="text-center" style="font-size: 1.1rem">Cập nhật profile cá nhân</div>
+					<div class="text-center" style="font-weight: 300">Vui lòng nhập số điện thoại để xác thực tài khoản của bạn</div>
+					<input id="required-info-input" class="form-control" type="text" placeholder="Số điện thoại">
+				</div>
+				<div class="required-info-footer text-right">
+					<button class="btn btn-success btn-sm required-info-btn">Cập nhật</button>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	<script>
+		
+		$(document).on('click', function (e) {
+			let target = e.target;
+			if (!$(target.closest('.parent-menu-item')).attr('data-dropdown')) {
+				$('.dropdown-menu').hide()
+				$('.track-menu').hide()
+			}
+
+			if ($(target.closest('.parent-menu-item')).attr('data-dropdown') == 'submenu-dropdown-1') {
+				$('.dropdown-menu').hide()
+			}
+
+			if ($(target.closest('.parent-menu-item')).attr('data-dropdown') == 'submenu-dropdown-6') {
+				$('.track-menu').hide()
+				$('.parent-menu.desktop .user-dropdown-avatar').next('.dropdown-menu').hide()
+			}
+		})
+
+		$('[data-toggle="popover"]').popover()
+
+		$(document).ready(function () {
+			if ($('.navbar-user-avatar-img').attr('src') == "") {
+				$('.navbar-user-avatar-img').attr('src', '/resources/image/anonymous-user.jpg')
+			}
+		})
+
+		 
+		document.addEventListener('DOMContentLoaded', function () {
+			var current = window.location.pathname;
+			
+			var items = $(".parent-menu-item")
+			for (let item of items) {
+				if ($(item).attr('data-href') !== undefined && $(item).attr('data-href') === current && current !== "/gio-hang" && current !== "/") {
+					$(item).addClass("active")
+					$(item).append(`
+						<span class="nav-indicator"></span>
+					`)
+				}
+			}
+		}, false)
+
+		function ShowSubMenu(elem) {
+			let dropdown = $(elem).children('.dropdown-menu');
+			let trackMenu = $(elem).children('.track-menu');
+			let mobileDropdown = $(elem).next('.parent-menu-item');
+			$(dropdown).toggle();
+			$(trackMenu).toggle();
+			if ($(mobileDropdown).attr('data-name') !== undefined) {
+				$(mobileDropdown).toggle();
+			}
+		}
+
+		function ShowUserMenu(elem) {
+			id = $(elem).data("dropdown")
+			if ($('#' + id).css('display') == 'none') {
+				$.ajax({
+					url: "/get-site-can-access",
+					type: "GET",
+					success: function (data) {
+						if (data.Teacher) {
+							$('.teacher-page').show()
+						}
+						if (data.Admin) {
+							$('.admin-page').show()
+						}
+						$('#' + id).css('display', 'flex');
+					},
+					error: function (data) {
+						$('#' + id).css('display', 'flex');
+					}
+				});
+			} else {
+				$('.admin-page').hide()
+				$('.teacher-page').hide()
+				$('#' + id).hide();
+			}
+		}
+
+		$('.navbar-toggler').click(function () {
+			$('#overlay').show()
+			$('#mySidenav').css("left", "0")
+		})
+
+		$('#overlay').click(function (e) {
+			$("#mySidenav").css("left", "-250px")
+			$('#sign-up').hide()
+			$('#sign-in').hide()
+			$('#forgot-password').hide()
+			$('#overlay').hide()
+		})
+
+		function openForgotPassword() {
+			$('#modal-signin').modal('hide')
+			$('#forgot-password').modal()
+		}
+
+		/*------------------ Đăng nhập, đăng ký, quên mật khẩu, đăng xuất ---------------------*/
+		$('#btn-sign-in').click(function (event) {
+			signInFunc()
+		})
+
+		$('#btn-sign-up').click(function () {
+			email = $('#sign-up-email').val()
+			phone = $('#sign-up-phone').val()
+			password = $('#sign-up-password').val()
+			retype = $('#sign-up-retype-password').val()
+			fullname = $('#sign-up-fullname').val()
+			if (!validateEmail(email)) {
+				toastr.warning('Định dạng email không hợp lệ')
+				return
+			}
+			if (!validatePhone(phone)) {
+				toastr.warning('Định dạng số điện thoại không hợp lệ')
+				return
+			}
+			if (password.length == 0) {
+				toastr.warning('Vui lòng nhập mật khẩu')
+				return
+			}
+			if (retype.length == 0) {
+				toastr.warning('Vui lòng gõ lại mật khẩu')
+				return
+			}
+			if (retype != password) {
+				toastr.warning('Mật khẩu gõ lại chưa trùng khớp')
+				return
+			}
+			if (fullname.length == 0) {
+				toastr.warning('Vui lòng nhập họ tên')
+				return
+			}
+			var req = {
+				Email: email,
+				Password: password,
+				FullName: fullname,
+				Phone: phone,
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/sign-up",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					toastr.success("Đăng ký tài khoản thành công. Một email kích hoạt đã được gửi vào hòm thư của bạn.")
+					$('#sign-up-email').val('')
+					$('#sign-up-phone').val('')
+					$('#sign-up-password').val('')
+					$('#sign-up-retype-password').val('')
+					$('#sign-up-fullname').val('')
+					$('#modal-signin').modal('hide')
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		})
+
+		$('#btn-forgot-password').click(function () {
+			email = $('#forgot-password-email').val()
+			if (!validateEmail(email)) {
+				toastr.warning('Định dạng email không hợp lệ')
+				return
+			}
+			var req = {
+				Email: email,
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/forgot-password",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					toastr.success("Một email hướng dẫn sẽ được gửi đến bạn trong vài phút tới. Vui lòng kiểm tra email.")
+					$('#forgot-password').modal('hide')
+					$("#forgot-password-email").val("")
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		})
+
+		$('.choose-sign-out').click(function (event) {
+			event.preventDefault()
+			$.ajax({
+				url: "/logout",
+				type: "GET",
+				contentType: "application/json; charset=utf-8",
+				success: function (data) {
+					window.location.replace("/");
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		})
+
+		// $('#sign-in-email').keyup(function (event) {
+		// 	value = $(this).val()
+		// 	$(this).val(value.toLowerCase().replace(" ", ""))
+		// })
+
+		$('#sign-up-email').keyup(function (event) {
+			value = $(this).val()
+			$(this).val(value.toLowerCase().replace(" ", ""))
+		})
+
+		function signInFunc() {
+			event.preventDefault()
+			email = $('#sign-in-email').val()
+			password = $('#sign-in-password').val()
+			if (!validateEmail(email)) {
+				toastr.warning('Định dạng email không hợp lệ')
+				return
+			}
+			if (password.length == 0) {
+				toastr.warning('Vui lòng nhập mật khẩu')
+				return
+			}
+			var req = {
+				Email: email,
+				Password: password,
+				Remember: $('#sign-in-remember').prop('checked'),
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/login",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					$('#modal-signin').modal('hide')
+						toastr.success("Đăng nhập thành công")
+						setTimeout(function() {
+							location.reload();
+						}, 500)
+					// if (data == true) {
+					// 	$('#modal-signin').modal('hide')
+					// 	toastr.success("Đăng nhập thành công")
+					// 	setTimeout(function() {
+					// 		location.reload();
+					// 	}, 500)
+					// } else {
+					// 	$('#modal-signin').modal('hide')
+					// 	$('#required-info-update').modal('show')
+					// }			
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		}
+
+		$('.required-info-btn').click(function() {
+			var phone = $('#required-info-input').val()
+			if (!validatePhone(phone)) {
+				toastr.warning('Định dạng số điện thoại không hợp lệ')
+				return
+			}
+			var req = {
+				Phone: phone,
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/update-required-info",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					toastr.success("Cập nhật thành công")
+					setTimeout(function() {
+						location.reload();
+					}, 500)
+				},
+				error: function (xhr) {
+					toastr.warning("Đã có lỗi xảy ra. Bạn vui lòng truy vào profile để thực hiện cập nhật.")
+				}
+			});
+		})
+
+		$('#sign-in-email, #sign-in-password').bind("enterKey", function (e) {
+			signInFunc()
+		});
+		$('#sign-in-email, #sign-in-password').keyup(function (e) {
+			if (e.keyCode == 13) {
+				$(this).trigger("enterKey");
+			}
+		});
+
+		/*----------------- Chuyển site -------------------*/
+		function GoToSite(li) {
+			window.location.replace($(li).data('href'))
+		}
+
+		function GoToAdminSite() {
+			window.location.replace("/admin");
+		}
+
+		function GoToTeacherSite() {
+			window.location.replace("/teacher");
+		}
+
+		$('.choose-user-profile').click(function (event) {
+			window.location.replace("/user/dashboard");
+		})
+
+		$('.choose-user-classes').click(function (event) {
+			window.location.replace("/user/dashboard/khoa-hoc");
+		})
+
+		$('.choose-active-order').click(function (event) {
+			window.location.replace("/kich-hoat-don-hang");
+		})
+
+		$('.choose-user-profile').click(function (event) {
+			window.location.replace("/user/dashboard/profile");
+		})
+
+		/*--------------- Đăng nhập bên thứ 3 -----------------*/
+		$('.github-sign-in').click(function () {
+			window.location.href = 'https://github.com/login/oauth/authorize?client_id=Iv1.cd5b5722dbe9629b'
+		})
+
+		$('.facebook-sign-in').click(function () {
+			FB.getLoginStatus(function (r) {
+				if (r.status === 'connected') {
+					var req = {
+						AccessToken: r.authResponse.accessToken,
+					};
+					var myJSON = JSON.stringify(req);
+					$.ajax({
+						url: "/login-facebook",
+						type: "POST",
+						contentType: "application/json; charset=utf-8",
+						data: myJSON,
+						dataType: "json",
+						success: function (data) {
+							location.reload();
+							// if (data == true) {
+							// 	location.reload();
+							// } else {
+							// 	$('#modal-signin').modal('hide')
+							// 	$('#required-info-update').modal('show')
+							// }	
+						},
+						error: function (xhr) {
+							toastr.warning(xhr.responseJSON.message)
+							closeModal()
+						}
+					});
+				} else {
+					FB.login(function (response) {
+						if (response.authResponse) {
+							var req = {
+								AccessToken: response.authResponse.accessToken,
+							};
+							var myJSON = JSON.stringify(req);
+							$.ajax({
+								url: "/login-facebook",
+								type: "POST",
+								contentType: "application/json; charset=utf-8",
+								data: myJSON,
+								dataType: "json",
+								success: function (data) {
+									location.reload();
+								},
+								error: function (xhr) {
+									toastr.warning(xhr.responseJSON.message)
+									closeModal()
+								}
+							});
+						} else {
+							closeModal()
+						}
+					}, { scope: 'email' });
+				}
+			});
+		})
+
+		$('.google-sign-in').click(function () {
+			gapi.load('auth2', function(){
+				gapi.auth2.authorize({
+					client_id: `1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com`,
+					scope: 'profile email',
+					response_type: 'id_token permission'
+				}, function (response) {
+					if (response.error) {
+						toastr.warning("Lỗi không thể đăng nhập Google")
+						return;
+					}
+					var req = {
+						AccessToken: response.access_token,
+					};
+					var myJSON = JSON.stringify(req);
+					$.ajax({
+						url: "/login-google",
+						type: "POST",
+						contentType: "application/json; charset=utf-8",
+						data: myJSON,
+						dataType: "json",
+						success: function (data) {
+							location.reload();
+							// if (data == true) {
+							// 	location.reload();
+							// } else {
+							// 	$('#modal-signin').modal('hide')
+							// 	$('#required-info-update').modal('show')
+							// }	
+						},
+						error: function (xhr) {
+							toastr.warning(xhr.responseJSON.message)
+							closeModal()
+						}
+					});
+				});
+			})
+		})
+
+	// -------
+	const c_username = document.getElementById('advisory-name');
+	const c_email = document.getElementById('advisory-email');
+	const c_phone = document.getElementById('advisory-phone');
+	const c_note = document.getElementById('advisory-note');
+	const c_btn = document.getElementById('btn-submit-advisory');
+	const c_input = document.getElementsByClassName('input__row')
+
+	var id_schedules, data_type
+	
+	$('body').on('click','#btn_register_advisory-modal', function() {
+		id_schedules = $(this).parents('.class-info').find('.class-title a').attr('data-id')
+		data_type = $(this).parents('.class-info').find('.class-title a').attr('data-type')
+	})
+
+	// -------
+	c_btn.addEventListener('click', function(e) {
+		e.preventDefault();
+		let isValid = checkInputs();
+
+		if (isValid) {
+			let id, type
+			let pathname = window.location.pathname
+			if(pathname === "/trungtam/lich-khai-giang") {
+				id = id_schedules
+				type = parseInt(data_type)
+
+			} else {
+				let pathnameArr = pathname.split('/')
+				if(pathnameArr[1] === "khoa-hoc") {
+					id = pathnameArr[2]
+					type = 1
+				}
+			}
+
+			let usernameValue = c_username.value
+			let emailValue = c_email.value
+			let phoneValue = c_phone.value
+			let noteValue = c_note.value
+			
+			let req = {
+				FullName: usernameValue,
+				Email : emailValue,
+				Phone : phoneValue,
+				Info : noteValue,
+				Link : window.location.href,
+				ItemId : id,
+				Type : type
+			};
+
+			let myJSON = JSON.stringify(req);
+
+			// console.log(req);
+
+			$.ajax({
+				url: "/submit-advisory",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					$('#advisory-name, #advisory-email, #advisory-phone, #advisory-note').val("")
+					$('.input__row').removeClass('success')
+					toastr.success(data)
+					$('#advisory-modal').modal('hide')
+				},
+				error: function (result) {
+					toastr.error(result.responseJSON.message)
+				}
+			});
+		}
+	});
+	//-----
+	function checkInputs() {
+		const usernameValue = c_username.value.trim();
+		const emailValue = c_email.value.trim();
+		const phoneValue = c_phone.value.trim();
+
+		let isValid = true
+
+		if (usernameValue === '') {
+			setErrorFor(c_username, 'Tên không được để trống.');
+			isValid = false
+		} else {
+			setSuccessFor(c_username);
+		}
+
+		if (emailValue === '') {
+			setErrorFor(c_email, 'Email không được để trống');
+			isValid = false
+		} else if (!isEmail(emailValue)) {
+			setErrorFor(c_email, 'Email không đúng định dạng');
+			isValid = false
+		} else {
+			setSuccessFor(c_email);
+		}
+
+		if (phoneValue === '') {
+			setErrorFor(c_phone, 'Số điện thoại không được để trống');
+			isValid = false
+		} else {
+			setSuccessFor(c_phone);
+		}
+
+		return isValid
+
+	}
+
+	//-----
+	function setErrorFor(input, message) {
+		const formInput = input.parentElement;
+		const small = formInput.querySelector('small');
+		formInput.className = 'input__row error';
+		small.innerText = message;
+	}
+
+	function setSuccessFor(input) {
+		const formInput = input.parentElement;
+		formInput.className = 'input__row success';
+	}
+
+	function isEmail(email) {
+		return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+	}
+	</script>
+</header>
+
+    </div>
+
+    <div class="body-part">
+         <script src="/resources/prism/prism.js"></script>
+<link rel="stylesheet" href="/resources/prism/prism.css">
+
+<div class="container body-content media-css">
+    <a href="#" id="back-to-top" title="Back to top"><i class="fas fa-angle-up fa-3x"></i></a>
+    <div class="row">
+        <div class="col-12 breadcrum-div">
+            <a href="/">Trang chủ</a>
+            <span class="bc"><i class="fas fa-chevron-right"></i></span>
+            <a href="/posts">Blog</a>
+            <span class="bc"><i class="fas fa-chevron-right"></i></span>
+            <a href="/posts/35997/thong-bao-tuyen-sinh-lop-java-web-fullstack">Thông báo tuyển sinh lớp Java Web Fullstack </a>
+        </div>
+    </div>
+    
+    <div class="row main-post media-table">
+        <div class="col-lg-9 post">
+            <div itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://techmaster.vn/media/static/6734/bt487pk51co41h2qcnvg">
+                <meta itemprop="width" content="800">
+                <meta itemprop="height" content="800">
+            </div>
+            <h1 class="margin-bottom-15">Thông báo tuyển sinh lớp Java Web Fullstack </h1>
+            <div class="margin-bottom-15">
+                25 tháng 08, 2020
+            </div>
+            
+            <div class="techmaster-font-open-sans post-content">
+                <p>Tháng 9/2020, Techmaster Vietnam dự kiến khai giảng lớp lộ trình <a href="https://techmaster.vn/lo-trinh/java-fullstack">Java Web Fullstack</a>,&nbsp;ngoài việc độc lập nền tảng, phong cách "lập trình hướng đối tượng" của Java và sự hấp dẫn rất cao đối với các nhà tuyển dụng IT khiến&nbsp;Java trở thành&nbsp;một ngôi sao&nbsp;sáng chói trên thị trường tuyển dụng việc làm&nbsp;hiện nay.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div style="text-align:center">
+<figure class="image" style="display:inline-block"><img alt="Lập trình Java tại Hà Nội" height="609" src="https://techmaster.vn/media/static/10194/brh0a1451cod1asba1lg" width="1000" />
+<figcaption>Nhu cầu tuyển dụng Java rất lớn thu hút số lượng lớn học viên đăng ký học Java&nbsp;</figcaption>
+</figure>
+</div>
+
+<h2>Đối tượng phù hợp với khóa học:&nbsp;</h2>
+
+<ul>
+	<li>Sinh viên CNTT năm 2, năm 3, các bạn lập trình viên muốn học thêm về lập trình backend.</li>
+	<li>Đã có kiến thức căn bản về lập trình Web Front-end (HTML, CSS, Javascript), Git, SQL, Linux.</li>
+	<li>Đam mê tìm tòi, xử lý các logic nghiệp vụ cho doanh nghiệp.</li>
+	<li>Mong muốn tham gia xây dựng những hệ thống lớn, phục vụ hàng triệu người dùng.</li>
+	<li>Tư duy logic, toán, hệ thống CNTT tốt</li>
+	<li>Hoặ các học viên tốt nghiệp khoá nền tảng lập trình tại Techmaster Việt Nam</li>
+</ul>
+
+<h2>Mục tiêu khóa học hướng tới:</h2>
+
+<ul>
+	<li>Nắm vững kiến thức căn bản về Java. Đủ khả năng thi chứng chỉ Java Oracle 11</li>
+	<li>Sử dụng Spring Boot để dựng một ứng dụng web hoàn chỉnh theo mô hình MVC</li>
+	<li>Đóng gói và triển khai ứng dụng web lên Google Cloud bằng Docker</li>
+</ul>
+
+<h2><a href="https://techmaster.vn/lo-trinh/java-fullstack">Lộ trình học cụ thể</a>:</h2>
+
+<ul>
+	<li><a href="https://techmaster.vn/khoa-hoc/e2l/lap-trinh-java-can-ban">Java OOP</a> (15 buổi)</li>
+	<li><a href="https://techmaster.vn/khoa-hoc/j79/lap-trinh-java-nang-cao">Java nâng cao</a> (15 buổi)</li>
+	<li>Docker Devops (6&nbsp;buổi)</li>
+	<li><a href="https://techmaster.vn/khoa-hoc/r7w/khoa-hoc-spring-boot">Java Spring Boot</a>&nbsp; (18 buổi)</li>
+</ul>
+
+<p>&nbsp;Khóa học kéo dài trong 4,5 tháng, một tuần học 3 buổi, mỗi buổi 3 giờ đồng hồ.&nbsp;Giáo trình Java chuẩn của đại học Hoa Kỳ + 1000 ví dụ mẫu.&nbsp;</p>
+
+<h2>Thời gian và địa điểm:&nbsp;</h2>
+
+<ul>
+	<li>Thời gian học: 18:30 - 21:30 PM | thứ 3, thứ 5 và thứ 7&nbsp;</li>
+	<li>Ngày khai giảng: 8/9/2020</li>
+	<li>Địa điểm: tầng 12A, tòa nhà Viwaseen, số 48 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội.</li>
+</ul>
+
+<h2>Học phí: 14,000,000 VND / 4,5 tháng</h2>
+
+<p>Đặc biệt, khi đăng ký lớp, học viên sẽ được:&nbsp;</p>
+
+<ul>
+	<li>Thực hành phòng lab, giảng viên hướng dẫn từng bước từ dễ đến khó.</li>
+	<li>Hệ thống bài giảng trực tuyến gồm video, câu hỏi trắc nghiệm, bài tập hỗ trợ học viên ôn tập kiến thức.</li>
+	<li>Hỏi đáp, thảo luận trực tuyến qua Google Meet, Zalo, Skype.</li>
+	<li>Kho sách tham khảo cùng hàng trăm sản phẩm, đồ án mẫu từ các học viên cũ.</li>
+	<li>Tham gia các hoạt động dã ngoại (3 tháng/lần) cùng Techmaster</li>
+</ul>
+
+<div style="text-align:center">
+<figure class="image" style="display:inline-block"><img alt="Địa điểm học Java nâng cao uy tín Hà Nội" height="750" src="https://techmaster.vn/media/static/10194/bsg0hdc51cob9t3q7nqg" width="1000" />
+<figcaption>Cuối khóa, mỗi học viên sẽ phải bảo vệ đồ án cá nhân.<br />
+Nếu pass và có sản phẩm chất lượng sẽ được trung tâm hỗ trợ giới thiệu việc làm.&nbsp;<br />
+Xem thông tin hợp tác tuyển dụng dev Java của Techmaster và BIDV tại <a href="https://techmaster.vn/posts/35996/bidv-hop-tac-tuyen-dung-techmaster-lap-trinh-java-web-full-stack">đây</a>.</figcaption>
+</figure>
+</div>
+
+<blockquote>
+<p>Liên hệ tư vấn và đăng ký:</p>
+
+<p>Ms. Thúy: 0967983563 - support@techmaster.vn&nbsp;</p>
+
+<p>Ms. Hương:&nbsp;0382416368 - huong@techmaster.vn</p>
+</blockquote>
+
+            </div>
+
+            
+            <div class="post-comments">
+                <h1 class="title-comments-box">Bình luận</h1>
+                
+                <div class="list-cmt">
+                    
+                </div>
+
+                
+                <div class="comments-box" id="writeComment">
+                    
+                    <div class="comment">
+                        <div class="comment-author-avatar">
+                            <img src="" alt="avatar" />
+                        </div>
+                        <div class="comment-author-content">
+                            <textarea class="cmts-area" placeholder="Viết bình luận..." data-autoresize></textarea>
+                            <div class="comment-author-action">
+                                <button class="btn-send-cmt">Bình luận</button>
+                                <button class="btn-reset">Hủy</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="interaction-div-mobile">
+                <div class="interaction-div-mobile-item">
+                    <span class="liked-post-mobile interaction-like" onclick="LikePost()">
+                        <i class="fas fa-thumbs-up" style="color: #5E5E5E;"></i>
+                    </span>
+                    &nbsp;<span class="vote-score"
+                        style="font-size: 1rem">+2</span> Thích
+                </div>
+                <div class="interaction-div-mobile-item">
+                    <a class="share-facebook" target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://techmaster.vn/">
+                        <button class="btn btn-primary" style="background-color: #2b4d8d; padding: 0.25rem 0.75rem"><i
+                                class="fab fa-facebook-square"></i> &nbsp;Chia sẻ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 post-info fixedsticky">
+            <a 
+                href="/posts?author=anonymous"  style="color: #464646; text-decoration: none">
+                <div class="author">
+                    <div class="author-avatar">
+                        <img src="/resources/image/logo.jpg" alt="Techmaster Team">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">
+                            <b>Techmaster Team</b>
+                        </div>
+                        <div class="count-post">
+                            333 bài viết
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="heading-article heading-article--highlight">
+                <h4 class="margin-bottom-15">
+                    Đầu mục bài viết
+                </h4>
+                <div id="toc"></div>
+                
+            </div>
+            <div class="related-posts heading-article--highlight">
+                <h4 class="margin-bottom-15">
+                    Bài viết liên quan
+                </h4>
+                
+                <div class="related-item">
+                    <a href="/posts/35994/tai-sao-nen-chon-phat-trien-app-bang-flutter-2020" target="_blank">
+                        Tại sao nên chọn phát triển app bằng Flutter 2020 ? 
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/posts/35992/su-khac-biet-duoi-goc-nhin-cua-testers-va-developers" target="_blank">
+                        Sự khác biệt dưới góc nhìn của &#34;Testers&#34; và &#34;Developers&#34;
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/posts/35989/test-web-can-nhung-gi" target="_blank">
+                        Test web cần những gì?
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/posts/35987/cac-loai-kiem-thu-va-muc-do-kiem-thu-so-sanh-kiem-thu-tu-dong-voi-kiem-thu-thu-cong" target="_blank">
+                        Các loại kiểm thử và Mức độ kiểm thử? So sánh kiểm thử tự động với kiểm thử thủ công?
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/posts/35982/junior-developer-thuong-mac-3-loi-react-function-component-state-nay" target="_blank">
+                        Junior Developer thường mắc 3 lỗi  React Function Component State này
+                    </a>
+                </div>
+                
+            </div>
+            <div class="related-courses heading-article--highlight">
+                <h4 class="margin-bottom-15">
+                    Khoá học hay
+                </h4>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/ha5/deep-learning-2020-tensorflow-2-x-python-3-7" target="_blank">
+                        Deep Learning  2020 (TensorFlow 2.x, Python 3.7)
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/l9y/sql-cho-nguoi-moi-bat-dau" target="_blank">
+                        SQL cho người mới bắt đầu
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/vwh/luyen-thi-chuan-ky-su-cntt-nhat-ban-fundamental-engineering-fe" target="_blank">
+                        Luyện thi chuẩn kỹ sư CNTT Nhật Bản (Fundamental Engineering - FE)
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/25572/hoc-lap-trinh-java-truc-tuyen" target="_blank">
+                        Học lập trình Java trực tuyến
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/bw5/khoa-hoc-devops" target="_blank">
+                        Khóa học DevOps
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/25561/docker-qua-vi-du-thuc-te" target="_blank">
+                        Docker qua ví dụ thực tế
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/4ko/reactjs-danh-cho-doanh-nghiep" target="_blank">
+                        ReactJS dành cho doanh nghiệp
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/25554/lap-trinh-ios-swift-2020" target="_blank">
+                        Lập trình iOS Swift 2020
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/rw5/lap-trinh-da-nen-tang-voi-flutter" target="_blank">
+                        Lập trình đa nền tảng với Flutter
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="/khoa-hoc/p9u/thiet-ke-trien-khai-ai-chatbot-voi-python" target="_blank">
+                        Thiết kế - triển khai AI Chatbot với Python
+                    </a>
+                </div>
+                
+            </div>
+            <div style="margin-top: 2rem">
+                <div class='ml-rcm' rc-type='job' rc-layout='bjobs' rc-li='3' rc-for='url'
+                    rc-title='Những việc làm hấp dẫn'
+                    token-site='aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D'
+                    animate="off"></div>
+            </div>
+        </div>
+        <div class="interaction-div">
+            <div class="interaction-div-child">
+                <div class="interaction-item vote-score" style="background-color: transparent;">
+                    +2
+                </div>
+                <div class="interaction-item interaction-like" onclick="LikePost()">
+                    <i class="fas fa-thumbs-up" style="color: #5E5E5E;"></i>
+                </div>
+            </div>
+            <div class="interaction-div-child">
+                <a class="share-facebook" target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=http://techmaster.vn/">
+                    <div class="interaction-item">
+                        <i class="fab fa-facebook-f" style="color: #3F51B5;"></i>
+                    </div>
+                </a>
+                <div class="interaction-item expand-div">
+                    <i class="fas fa-expand" style="color: #5E5E5E;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fixed-sticky/0.1.7/fixedsticky.js"></script>
+<link rel="stylesheet" href="/resources/css/post.css">
+
+<style>
+    .heading-article--highlight:first-child {
+        margin-top: 2rem;
+    }
+    .heading-article--highlight h4 {
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px 10px 20px;
+        background-color: #2c98f0;
+        color: #fff;
+        line-height: 1.1em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .heading-article--highlight h4:after {
+        display: block;
+        width: 10px;
+        height: 0px;
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        content: "";
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #2c98f0;
+    }
+</style>
+
+<script src="/resources/js/moment.min.js"></script>
+
+<script>
+    var score =  2 
+    var url = window.location.href;
+    $(".share-facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + url);
+
+    $(".expand-div").click(function () {
+        if ($('.post').hasClass("col-lg-9")) {
+            $('.post').removeClass('col-lg-9').addClass('col-lg-12')
+            $('.post-info').hide()
+            $('#header').hide()
+            $('#footer').hide()
+            $('.breadcrum-div').hide()
+            $(this).html('<i class="fas fa-compress" style="color: #5E5E5E;"></i>')
+        } else {
+            $('.post').removeClass('col-lg-12').addClass('col-lg-9')
+            $('.post-info').show()
+            $('#header').show()
+            $('#footer').show()
+            $('.breadcrum-div').show()
+            $(this).html('<i class="fas fa-expand" style="color: #5E5E5E;"></i>')
+        }
+    })
+
+    function LikePost() {
+        $.ajax({
+            url: "/like-post/35997",
+            contentType: "application/json; charset=utf-8",
+            type: "POST",
+            success: function (data) {
+                score++
+                $('.vote-score').text("+" + score)
+            },
+            error: function (result) {
+                toastr.error(result.responseJSON.message)
+            }
+        });
+    }
+
+    
+    $('.show-modal-login').click(function() {
+        $('#modal-signin').modal('show')
+    })
+    
+    $('.cmts-area').focus(function () {
+        $(this).next().show(300)
+        addAutoResize()
+    })
+
+    $('.input-reply-cmt').focus(function () {
+            $(this).parent().next().show(300)
+            addAutoResize()
+        })
+
+    function UpdateContentCmt(btn,e) {
+        let content = $(btn).val()
+        if (e.keyCode == 13) {
+            content = content + "\n";
+        }
+        return content
+    }
+
+    
+    $('.btn-send-cmt').click(function () {
+        
+        
+        let content = UpdateContentCmt('.cmts-area', event)
+
+        if(content === '') {
+            toastr.error('Bình luận không được để trống.')
+            return
+        }
+        let req = {
+            Content: content,
+            ParentId : String( 35997 ),
+            Level : 1,
+            Type : "post"
+        }
+
+        var myJSON = JSON.stringify(req);
+        var that = this
+
+    $.ajax({
+        url: "/comment/create",
+        contentType: "application/json; charset=utf-8",
+        data: myJSON,
+        type: "POST",
+        success: function (data) {
+            let btnAction = `<div class="cmt-action">
+                                <button class="btn-reply">
+                                    <span><i class="fas fa-reply"></i></span>
+                                    Trả lời
+                                </button>
+                                <button class="btn-update-cmt" onclick="UpdateItem(this)">Sửa</button>
+                                <button class="btn-delete-cmt" onclick="RemoveItem('${data.id}',this)">Xóa</button>
+                            </div>
+                      
+                            <div class="cmt-reply">
+                                <div class="list-cmt-reply"></div>
+                                <div class="div-hide">
+                                    <div class="area-reply">
+                                        <img src="(?:)" class="cmt-reply-author-avatar" alt="Avatar">
+                                        <textarea class="input-reply-cmt" data-autoresize placeholder="Viết phản hồi"></textarea>
+                                    </div>
+                                    <div class="comment-author-action">
+                                        <button class="btn-send-cmt-reply">Bình luận</button>
+                                        <button class="btn-reset-reply">Hủy</button>
+                                    </div>
+                                </div>
+                            </div>`
+
+
+            let contentHtml =   `<div class="cmt-item" data-item-id="${data.id}">
+                                    <div class="comment-author-avatar">
+                                        <img src="" alt="Avatar" />
+                                    </div>
+                                    <div class="comment-author-content">
+                                        <span class="name-author-cmt">Phùng Quang Hà</span>
+                                        <span class="time-author-cmt">${ConvertTime(data.created_at)}</span>
+                                        <pre class="comtent-author-cmt">${data.content}</pre>
+                                        ${btnAction}
+                                    </div>
+                                </div>`
+
+            $(that).parent().parent().parent().parent().parent().find('.list-cmt').append(contentHtml)
+            $(that).parent().parent().find('.cmts-area').val("")
+            $(that).parent().parent().find('.cmts-area').focus()
+            $(that).parent().parent().find('.cmts-area').css({
+                height: "4em"
+            })
+            
+        },
+        error: function (result) {
+            toastr.error(result.responseJSON.message)
+        }
+    });
+
+    
+    })
+
+    
+    $('body').on("click", ".btn-send-cmt-reply", function () {
+        
+        
+        let content = $(this).parent().parent().find('.input-reply-cmt').val()
+        let parentId = $(this).parent().parent().parent().parent().parent().attr("data-item-id")
+
+        if(content === '') {
+            toastr.error('Bình luận không được để trống.')
+            return
+        }
+    
+        let req = {
+            Content: content,
+            ParentId : parentId,
+            Level : 2,
+            Type : "comment"
+        }
+
+        var myJSON = JSON.stringify(req);
+        var that = this
+
+    $.ajax({
+        url: "/comment/create",
+        contentType: "application/json; charset=utf-8",
+        data: myJSON,
+        type: "POST",
+        success: function (data) {
+            let btnAction = `<div class="cmt-action">
+                                <button class="btn-update-cmt" onclick="UpdateItem(this)">Sửa</button>
+                                <button class="btn-delete-cmt" onclick="RemoveItem('${data.id}',this)">Xóa</button>
+                            </div>`
+
+            let contentHtml =   `<div class="cmt-item-reply" data-item-id="${data.id}">
+                                    <div class="comment-author-avatar">
+                                        <img src="(?:)" alt="Avatar" />
+                                    </div>
+                                    <div class="comment-author-content">
+                                        <span class="name-author-cmt">Phùng Quang Hà</span>
+                                        <span class="time-author-cmt">${ConvertTime(data.created_at)}</span>
+                                        <pre class="comtent-author-cmt">${data.content}</pre>
+                                        ${btnAction}
+                                    </div>
+                                </div>`
+
+            $(that).parent().parent().parent().find('.list-cmt-reply').append(contentHtml)
+            $(that).parent().parent().find('.input-reply-cmt').val("")
+            $(that).parent().parent().find('.input-reply-cmt').focus()
+            $(that).parent().parent().find('.input-reply-cmt').css({
+                height: "4em"
+            })
+        },
+        error: function (result) {
+            toastr.error(result.responseJSON.message)
+        }
+    });
+
+    
+    })
+
+    
+    function checkHasCommentReply(id) {
+        let count = $(".post-comments").find(`[data-item-id='${id}']`).find('.cmt-item-reply').length
+        return count > 0 ? true : false
+    }
+
+    
+    function RemoveItem(id,btn) {
+        bootbox.confirm({
+            message: "Bạn muốn chắc chắn xóa bình luận này không?",
+            buttons: {
+                confirm: {
+                    label: 'Có',
+                    className: 'btn-accept'
+                },
+                cancel: {
+                    label: 'Không',
+                    className: 'btn-cancel'
+                }
+            },
+            callback: function (result) {
+                if(result) {
+                    $.ajax({
+                        url: '/comment/delete/' + id,
+                        contentType: "application/json; charset=utf-8",
+                        type: "DELETE",
+                        success: function (data) {
+                            if(checkHasCommentReply(id)) {
+                                messageCommentDeleted = `<p class="comment-is-deleted">
+                                                            <i class="fas fa-exclamation-circle"></i>
+                                                            Bình luận này đã bị xóa
+                                                        <p>`
+
+                                $(btn).parent().parent().find('.comtent-author-cmt:first').remove()
+                                $(btn).parent().parent().find('.time-author-cmt:first').after(messageCommentDeleted)
+                                $(btn).parent().remove()
+
+                            } else {
+                                $('.list-cmt').find(`[data-item-id='${id}']`).remove()
+                            }      
+                        },
+                        error: function (result) {
+                            toastr.error(result.responseJSON.message)
+                        }
+                    });
+                } 
+            }
+        });
+    }
+
+    //update comment effect
+    function UpdateItem(ele) {
+        $('.btn-cancel-cmt').click()
+        let idCmt = $(ele).parent().parent().parent().attr('data-item-id')
+        let cmtActionAfterUpdate = `<div class="cmt-action-after-update">
+                                        <button class="btn-updated-cmt" onclick="UpdateContent('${idCmt}',this)">Cập nhật</button>
+                                        <button class="btn-cancel-cmt">Hủy</button>
+                                    </div>`
+        
+        let content = $(ele).parent().parent().find('.comtent-author-cmt:first').text()
+        let formUpdateCmt = `<form class="form-update-cmt">
+                                <textarea class="input-update-cmt" data-autoresize>${content}</textarea>
+                            </form>`
+        $(ele).parent().parent().find('.comtent-author-cmt:first').hide()
+        $(ele).parent().parent().find('.cmt-action:first').hide()
+        $(ele).parent().after(cmtActionAfterUpdate)
+        $(ele).parent().before(formUpdateCmt)
+    }
+
+    //cancel write comment
+    $('body').on("click", ".btn-cancel-cmt", function () {
+        $(this).parent().parent().find('.comtent-author-cmt').show()
+        $(this).parent().parent().find('.form-update-cmt').remove()
+        $(this).parent().parent().find('.cmt-action').show()
+        $(this).parent().parent().find('.cmt-action-after-update').remove()
+    })
+
+    
+    function UpdateContent(id, btn) {
+        let content = $(btn).parent().parent().find('.input-update-cmt').val()
+
+        if (content === '') {
+            toastr.error('Bình luận không được để trống.')
+            return
+        }
+
+        let req = {
+            Id : id,
+            Content: content
+        }
+
+        var myJSON = JSON.stringify(req);
+        $.ajax({
+            url: "/comment/update/" + id,
+            contentType: "application/json; charset=utf-8",
+            data: myJSON,
+            type: "PUT",
+            statusCode : {
+                200 : function (data) {
+                    let messageUpdated = `<span class="message-updated"><i class="fas fa-pencil-alt"></i></span>` 
+                    $(btn).parent().parent().find('.comtent-author-cmt').text(data.Content)
+                    $(btn).parent().parent().find('.time-author-cmt').text(ConvertTime(data.ModifiedAt))
+                    $(btn).parent().parent().find('.time-author-cmt').after(messageUpdated)
+                    $(btn).parent().parent().find('.comtent-author-cmt').show()
+                    $(btn).parent().parent().find('.form-update-cmt').remove()
+                    $(btn).parent().parent().find('.cmt-action').show()
+                    $(btn).parent().parent().find('.cmt-action-after-update').remove()
+                }
+            }
+        });
+    }
+
+
+    $('body').on("click", ".btn-reply", function () {
+        $(this).parent().parent().find('.div-hide').slideToggle()
+    })
+
+    
+    function ConvertTime(time) {
+        moment.locale('vi')
+        let dateTime = moment(time).startOf().fromNow();
+        return dateTime
+    }
+
+    
+    function addAutoResize() {
+        document.querySelectorAll('[data-autoresize]').forEach(function (element) {
+            element.style.boxSizing = 'border-box';
+            var offset = element.offsetHeight - element.clientHeight;
+            document.addEventListener('input', function (event) {
+                event.target.style.height = 'auto';
+                event.target.style.height = event.target.scrollHeight + offset + 'px';
+            });
+            element.removeAttribute('data-autoresize');
+        });
+    }
+
+    
+    $('body').on("click",".btn-reset", function () {
+        $(this).parent().parent().find('.cmts-area').val('')
+        $(this).parent().slideUp()
+        $(this).parent().parent().find('.cmts-area').css({
+            height: "4em"
+        })
+    })
+
+    $('body').on("click",".btn-reset-reply", function () {
+        $(this).parent().parent().find('.input-reply-cmt').val('')
+        $(this).parent().parent().slideUp()
+        $(this).parent().parent().find('.input-reply-cmt').css({
+            height: "4em"
+        })
+    })
+
+    $(document).ready(function () {
+        
+        let images = $('.post-content img')
+        Array.from(images).map(image => {
+            console.log($(image).css('float'));
+            if($(image).css('float') == 'left') {
+                $(image).css('margin-right', '2rem')
+            } else if($(image).css('float') == 'right') {
+                $(image).css('margin-left', '2rem')
+            } else {
+                $(image).css('margin', 'auto')
+            }
+        })
+        
+        
+       $('#toc').toc({
+           'selectors': 'h2,h3',
+           'container': '.post-content'
+       })
+
+       if($('.post-content').find('h2').length == 0) {
+           $('#toc .toc-h3').css("margin-left","0")
+       }
+
+       if($('#toc').find('li').length == 0) {
+           $('.heading-article').remove()
+       }
+
+       
+        $("#toc a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 300, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+       
+       $('.main-post .post-info').fixedsticky();
+
+       
+        $('.time-author-cmt').each(function (index, element) {
+            time = $(element).text()
+            $(element).text(ConvertTime(time))
+        });
+    
+        let comments =  null 
+        let userInfo = {"Authenticated":true,"UserId":"bslsthn0k7qnmh327ij0","UserFullName":"Phùng Quang Hà","UserEmail":"pqha52@gmail.com","UserAvatar":"","Roles":null,"UserPhone":"0383575993","CountCartItem":0,"GithubClientId":"Iv1.cd5b5722dbe9629b","GoogleClientId":"1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com","FacebookClientId":"290270177727593","AdminMenu":false}
+        
+        if(comments && comments.length > 0) {
+            
+            let notOwnComment = comments.filter((comment, index) => {
+                return comment.UserId !== userInfo.UserId
+            })
+            notOwnComment.map((comment, index) => {
+                $('.list-cmt').find(`[data-item-id='${comment.Id}']`).find('.cmt-action .btn-update-cmt:first, .cmt-action .btn-delete-cmt:first').remove()
+                $('.list-cmt').find(`[data-item-id='${comment.Id}']`).find('.cmt-action-after-update:first').remove()
+            })
+
+            
+            let commentsReplyArr = comments.map(comment => comment.ReplyComment)
+            commentsReplySingle = [].concat(...commentsReplyArr)
+            let notOwnCommentsReplySingle = commentsReplySingle.filter(comment => comment.user_id !== userInfo.UserId && comment.id != '')
+            notOwnCommentsReplySingle.map((comment, index) => {
+                $('.list-cmt-reply').find(`[data-item-id='${comment.id}']`).find('.cmt-action').remove()
+                $('.list-cmt-reply').find(`[data-item-id='${comment.id}']`).find('.cmt-action-after-update').remove()
+            })
+
+            
+            let commentIsDeleted = comments.filter((comment, index) => {
+                return comment.UserId !== userInfo.UserId
+            })
+        }
+        
+        
+        $('.cmt-reply-author-avatar').attr("src", userInfo.UserAvatar);
+
+        
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 200, 
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').addClass('show');
+                    } else {
+                        $('#back-to-top').removeClass('show');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+    })
+
+
+    
+    $('#techmaster-join-jitsi-meeting').click(function(room) {
+        let jitsi_room = $(this).data("room");
+        if ( true ) {
+            var req = {
+                IsLogin: true,
+                AccessToken: "",
+                Room: jitsi_room
+            };
+            var myJSON = JSON.stringify(req);
+            $.ajax({
+				url: "/join-jitsi-meeting",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					location.href = data;
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+        } else {
+            gapi.load('auth2', function(){
+				gapi.auth2.authorize({
+					client_id: "1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com",
+					scope: 'profile email',
+					response_type: 'id_token permission'
+				}, function (response) {
+					if (response.error) {
+						toastr.warning("Lỗi không thể đăng nhập Google")
+						return;
+					}
+                    var req = {
+                        IsLogin: false,
+                        AccessToken: response.access_token,
+                        Room: jitsi_room
+                    };
+                    var myJSON = JSON.stringify(req);
+                    $.ajax({
+                        url: "/join-jitsi-meeting",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            location.href = data;
+                        },
+                        error: function (xhr) {
+                            toastr.warning(xhr.responseJSON.message)
+                        }
+                    });
+				});
+			})
+        }
+    })
+</script>
+    </div>
+
+    <div style="background-color:#464646" class="container-fluid" id="footer">
+        <div class="container footer">
+            
+<footer>
+	<style type="text/css">
+		footer{padding:3rem 0 3rem 0;line-height:2.5em}footer h4{color:#fff;font-size:18px}footer,footer a{color:#919294}.social-links ul{list-style-type:none}.desktop.social-links li{float:left;margin-left:1rem;margin-right:.5rem;font-size:1rem}.desktop.social-links{height:50px;display:flex;justify-content:flex-start;margin:auto}.footer-info li a:hover{color:#919294}.mobile.social-links{display:none}@media (max-width:575px){.footer-info{text-align:center}.desktop.social-links{display:none}.mobile.social-links{height:50px;display:flex;justify-content:space-evenly;margin:auto}}.list-inline.social-links .fab{border-radius:0}
+	</style>
+	<div class="">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Chủ sở hữu website</h4>
+					
+					<li>
+						
+						<a href=/about target="_blank"> Công ty TNHH TechMaster Vietnam Ltd </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Số ĐKDN: 0105392153 </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Ngày cấp: 4-7-2011 </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Nơi cấp: Sở kế hoạch - đầu tư Hà nội </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Người đại diện pháp luật: Lê Minh Thu </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Phụ trách nội dung: Trịnh Minh Cường </span>
+							
+
+					</li>
+
+					
+					
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Giới thiệu</h4>
+					
+					<li>
+						
+						<a href=/trungtam/trung-tam target="_blank"> Học viện CNTT Techmaster </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href=/trungtam/giang-vien target="_blank"> Giảng viên </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href=/trungtam/quy-dinh-chung target="_blank"> Quy định </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href=/trungtam/huong-dan-mua-khoa-hoc target="_blank"> Hướng dẫn mua khóa học </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href=/trungtam/uu-dai-va-hoan-tra-hoc-phi target="_blank"> Ưu đãi và hoàn trả học phí </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href=/trungtam/bao-ve-thong-tin-khach-hang target="_blank"> Bảo vệ thông tin khách hàng </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Tư vấn tuyển sinh</h4>
+					
+					<li>
+						
+						
+						
+							
+							<span> Tư vấn viên : </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						<a href="tel:0967983563" target="_blank"> 1. Trương Minh Thúy - 0967983563 </a>
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+						<a href="mailto:support@techmaster.vn" target="_blank"> support@techmaster.vn </span>
+							
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						<a href="tel:0382416368" target="_blank"> 2. Nguyễn Thanh Hương - 0382416368 </a>
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+						<a href="mailto:huong@techmaster.vn" target="_blank"> huong@techmaster.vn </span>
+							
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						<a href="tel:0902209011" target="_blank"> Tư vấn đào tạo doanh nghiệp: 090 220 9011 </a>
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+						<a href="mailto:cuong@techmaster.vn" target="_blank"> cuong@techmaster.vn </span>
+							
+							
+
+					</li>
+
+					
+					
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Địa chỉ</h4>
+					
+					<li>
+						
+						<a href=https://www.google.com/maps/place/48&#43;T%E1%BB%91&#43;H%E1%BB%AFu,&#43;Trung&#43;V%C4%83n,&#43;T%E1%BB%AB&#43;Li%C3%AAm,&#43;H%C3%A0&#43;N%E1%BB%99i,&#43;Vi%E1%BB%87t&#43;Nam/@20.998034,105.7924504,17z/data&#61;!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391 target="_blank"> Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href=https://www.google.com/maps/place/48&#43;T%E1%BB%91&#43;H%E1%BB%AFu,&#43;Trung&#43;V%C4%83n,&#43;T%E1%BB%AB&#43;Li%C3%AAm,&#43;H%C3%A0&#43;N%E1%BB%99i,&#43;Vi%E1%BB%87t&#43;Nam/@20.998034,105.7924504,17z/data&#61;!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391 target="_blank"> Cơ sở Nguyễn Đình Chiểu: 14 ngõ 4, Nguyễn Đình Chiểu, Quận Hai Bà Trưng, Hà Nội </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					
+					<ul class="desktop list-inline social-links" style="margin-top: 10px;">
+							<li><a class="facebook" href="https://www.facebook.com/techmastervn/?fref=ts" target="_blank"><i
+										class="fab fa-facebook-square fa-2x"></i>
+								</a></li>
+							<li><a class="youtube" href="https://www.youtube.com/user/TechMasterVN" target="_blank"><i
+										class="fab fa-youtube-square fa-2x"></i>
+								</a></li>
+							<li><a class="github" href="https://github.com/arrowjs" target="_blank"><i
+										class="fab fa-github-square fa-2x"></i>
+								</a></li>
+					</ul>
+					<ul class="mobile list-inline social-links" style="margin-top: 10px;">
+						<li><a class="facebook" href="https://www.facebook.com/techmastervn/?fref=ts" target="_blank"><i
+									class="fab fa-facebook-square fa-2x"></i>
+							</a></li>
+						<li><a class="youtube" href="https://www.youtube.com/user/TechMasterVN" target="_blank"><i
+									class="fab fa-youtube-square fa-2x"></i>
+							</a></li>
+						<li><a class="github" href="https://github.com/arrowjs" target="_blank"><i
+									class="fab fa-github-square fa-2x"></i>
+							</a></li>
+					</ul>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    
+    <script async>    
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function validatePhone(phone) {
+            if (phone.length <= 8 || phone.length > 20) return false
+            var re = /^\d+$/
+            return re.test(phone)
+        }
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "5000",
+            "timeOut": "5000",
+            "width": "700px",
+            "extendedTimeOut": "5000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut",
+        }
+        $('.techmaster-price').each(function (index, element) {
+            money = $(element).text()
+            $(element).text(money.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","))
+        });
+
+        
+        $(document).ready(function () {
+            document.title = "Thông báo tuyển sinh lớp Java Web Fullstack ";
+        });
+        
+    </script>
+
+    <style>
+        .fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in {
+            bottom: 70pt !important;
+        }
+
+        @media (min-width: 768px) {
+            .fb-customerchat iframe {
+                max-height: 0px !important; 
+            }
+        }
+        
+    </style>
+</body>
+
+</html>
