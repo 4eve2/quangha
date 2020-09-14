@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        
+        .header {
+            background-color: #34465c;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 200px;
+            text-align: center;
+        }
+        img {
+            width: 60%;
+        }
+        .menu ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            text-align: center;
+            margin-right: 100px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            margin: 0 20px 0 20px;
+        }
+        .menu ul li a:hover {
+            color: red;
+        }
+        .menu ul li {
+            position: relative;
+        }
+        .menu ul li .sub-menu {
+            /* visibility: hidden; */
+            display: none;
+            position: absolute;
+            width: 250px;
+            left: 10px;
+            padding-top: 20px;
+            line-height: 2;
+        }
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background-color: teal;
+        }
+        .sub-menu li {
+            display: block;
+            background-color: #34465c;
+            position: relative;
+            width: 100%;
+            padding: 0 20px 0 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/new_logo.png" alt="Not-avaiable">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">Lộ trình</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Nền tảng lập trình</a>
+                        </li>
+                        <li>
+                            <a href="#">Lộ trình fullstack</a>
+                        </li>
+                        <li>
+                            <a href="#">Lộ trình di động</a>
+                        </li>
+                        <li>
+                            <a href="#">Kiểm thử phần mềm</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Khoá học</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

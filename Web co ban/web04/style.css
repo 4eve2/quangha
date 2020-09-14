@@ -7,15 +7,19 @@ body {
     background-color: #F4F7FA;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    margin: 7%;
+    font-size: 16px;
+    margin: 0.5rem;
     color: #464646;
-}
-div {
-    margin-bottom: 10px;
 }
 .breadcrumb {
     font-size: 1em;
+    padding-left: 15px;
+    margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+.content {
+    display: flex;
+    flex-direction: row;
 }
 ul li {
     display: inline;
@@ -25,33 +29,33 @@ ul li {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    width: 66%;
+    padding-left: 15px;
+}
+.class-iframe {
+    width: 33.33%;
+    padding-left: 20px;
 }
 .class {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-}
-.timetable {
+    margin-bottom: 2em;
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 7px;
-    border-bottom: #464646;
-    border-bottom-width: 2px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.15);
 }
-.class-time {
-    padding: 1.5em;
-    width: 20%;
-}
-.class-info {
-    padding: 1.5em;
-    width: 80%;
-}
-.timetable-item {
-    width: 33.33%;
-}
+
 .class-year {
     text-align: center;
+    height: 30px;
+    border-top-left-radius: 4px;
+    padding: 3px 0;
+}
+.class-datetime {
+    height: 130px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    padding: 15px;
 }
 .class-date {
     text-align: center;
@@ -60,8 +64,55 @@ ul li {
 .class-month {
     text-align: center;
 }
+.class-info {
+    width: calc(100% - 160px);
+    padding: 1rem 1.5rem 0 1.5rem;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;    
+}
+.class-title {
+    font-size: 1.3rem;
+}
+.teachers {
+    font-size: 0.9rem;
+    /* font-weight: normal; */
+    
+}
+.timetable {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: #464646;
+    border-bottom-width: 2px;
+}
+.class-time {
+    text-align: center;
+    width: 160px;
+    min-height: 160px;
+    color: #fff;
+    position: relative;
+    font-weight: 300;
+}
+
+.timetable-item {
+    width: 33.33%;
+    float: left;
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+.register {
+    padding: 7px 0 5px 0;
+    color: #3c78e8;
+    font-weight: 300;
+    border-top: .5px solid #c4c4c4e3;
+}
 a {
-    font-weight: bold;
     color: #464646;
     text-decoration: none;
 }
