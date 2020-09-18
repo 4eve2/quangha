@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition</title>
+    <title>Transition-Animation</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
             margin: 5px;
         }
+
+        div.login {
+            width: 180px;
+            height: 80px;
+            background-color: blue;
+            transition-property: width, height, border-radius, background-color;
+            transition-duration: 2s, 2s;
+        }
+
+        div.login:hover {
+            border-radius: 50px;
+            background-color: green;
+        }
+
         div.img {
             width: 150px;
             height: 150px;
-            /* background-color: blue;
-            transition-property: width, height, border-radius, background-color;
-            transition-duration: 2s, 3s;
-            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
             transition: transform;
             transition-delay: 0.5ms;
         }
+
         div.img:hover {
-            /* border-radius: 50px; */
-            transform: scale(1.5);
+            transform: scale(1.4);
         }
+
         div.content {
             display: flex;
             width: 500px;
@@ -30,50 +42,141 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
-        .hoat-anh {
-            width: 100px;
-            height: 100px;
-            background-color: green;
-            animation-name: change-many-color;
-            animation-duration: 10s;
+
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: heart 1s ease infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            content: '';
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .heart:before {
+            bottom: 0px;
+            left: -100px;
+        }
+
+        .heart:after {
+            top: -100px;
+            right: 0px;
+        }
+
+        .start-action {
+            font-size: 32px;
+            color: #464646;
+        }
+
+        .hoat-anh-1 {
+            height: 50px;
+            animation-name: change-txt-1;
+            animation-duration: 9s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
+            position: absolute;
+            top: 1120px;
         }
+
+        .hoat-anh-2 {
+            height: 50px;
+            animation-name: change-txt-2;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            top: 1120px;
+        }
+
+        .hoat-anh-3 {
+            height: 50px;
+            animation-name: change-txt-3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            top: 1120px;
+        }
+
+        @keyframes change-txt-1 {
+            0% {
+                opacity: 100;
+            }
+
+            33% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes change-txt-2 {
+            0% {
+                opacity: 0;
+            }
+
+            33% {  
+                opacity: 100;              
+            }
+
+            66% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes change-txt-3 {
+            0% {
+                opacity: 0;
+            }
+
+            33% {  
+                opacity: 0;              
+            }
+
+            66% {
+                opacity: 100;
+            }
+        }
+
         .red {
             background-color: red;
             width: 150px;
             height: 150px;
         }
-        @keyframes change-color {
-            from {
-                background-color: green;
+
+        @keyframes heart {
+            98% {
+                transform: scale(.8, .8) rotate(45deg)
             }
-            to {
-                background-color: rebeccapurple;
-            }
-        }
-        @keyframes change-many-color {
-            0% {
-                background-color: red;
-            }
-            20% {
-                background-color: blue;
-            }
-            40% {
-                background-color: purple;
-            }
-            60% {
-                background-color: yellow;
-            }
-            80% {
-                background-color: white;
+
+            100% {
+                transform: scale(1, 1) rotate(45deg)
             }
         }
     </style>
 </head>
+
 <body>
+
     <!-- transition -->
-    <!-- <div class="content">
+    <p>Bai 1</p>
+    <div class="login">
+        <div style="padding: 28px; text-align: center; color: white;">
+            <p>L O G I N</p>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <p>Bai 2</p>
+    <div class="content">
         <div class="img" style="background-color: red;"></div>
         <div class="img" style="background-color: blue;"></div>
         <div class="img" style="background-color: green;"></div>
@@ -83,9 +186,33 @@
         <div class="img" style="background-color: paleturquoise;"></div>
         <div class="img" style="background-color: purple;"></div>
         <div class="img" style="background-color: brown;"></div>
-    </div> -->
-    <!-- animation -->
-    <div class="red"></div>
-    <div class="hoat-anh"></div>
+    </div>
+    <hr />
+    <br />
+    <p>Bai 3</p>
+    <div class="heart"></div>
+    <hr />
+    <br />
+    <p>Bai 4</p>
+    <div class="start-action">
+        <div style="width: 150px; text-align: center;">
+            <p>START</p>
+        </div>
+        <div>
+            <div class="hoat-anh-1" style="width: fit-content;">
+                <p style="color: white; background-color: red; padding: 7px;">CODING</p>
+            </div>
+            <div class="hoat-anh-2" style="width: fit-content;">
+                <p style="color: white; background-color: blue; padding: 7px;">TEACHING</p>
+            </div>
+            <div class="hoat-anh-3" style="width: fit-content;">
+                <p style="color: white; background-color: green; padding: 7px;">LEARNING</p>
+            </div>
+        </div>
+        <div style="width: 150px; text-align: center; margin-top:75px;">
+            <p>TODAY</p>
+        </div>
+    </div>
 </body>
+
 </html>
