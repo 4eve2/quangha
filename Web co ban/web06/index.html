@@ -11,6 +11,21 @@
             margin: 5px;
         }
 
+        body {
+            background-color: #F4F7FA;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: #fff;
+            margin: auto;
+            padding: 50px 20px 30px 40px;
+        }
+
         div.login {
             width: 180px;
             height: 80px;
@@ -25,6 +40,10 @@
         }
 
         div.img {
+            padding: 5px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: white;
             width: 150px;
             height: 150px;
             transition: transform;
@@ -79,72 +98,88 @@
         }
 
         .hoat-anh-1 {
-            height: 50px;
+            height: 0px;
             animation-name: change-txt-1;
-            animation-duration: 9s;
+            animation-duration: 6s;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation-timing-function: linear;
             position: absolute;
-            top: 1120px;
+            visibility: hidden;
+            top: 1240px;
         }
 
         .hoat-anh-2 {
-            height: 50px;
+            height: 0px;
             animation-name: change-txt-2;
             animation-duration: 6s;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-delay: 1s;
             position: absolute;
-            top: 1120px;
+            visibility: hidden;
+            top: 1240px;
         }
 
         .hoat-anh-3 {
-            height: 50px;
+            height: 0px;
             animation-name: change-txt-3;
-            animation-duration: 3s;
+            animation-duration: 6s;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation-timing-function: linear;
+            /* animation-delay: 2s; */
             position: absolute;
-            top: 1120px;
+            visibility: hidden;
+            top: 1240px;
         }
 
         @keyframes change-txt-1 {
-            0% {
-                opacity: 100;
+            0%{
+                visibility: visible;
             }
-
             33% {
-                opacity: 0;
+                visibility: hidden;
+            }
+            66% {
+                visibility: hidden;
+            }
+            99% {
+                visibility: hidden;
             }
         }
 
         @keyframes change-txt-2 {
             0% {
-                opacity: 0;
+                visibility: hidden;
             }
 
-            33% {  
-                opacity: 100;              
+            33% {
+                visibility: visible;
             }
-
+            
             66% {
-                opacity: 0;
+                visibility: hidden;
+            }
+            99% {
+                visibility: hidden;
             }
         }
 
         @keyframes change-txt-3 {
             0% {
-                opacity: 0;
+                visibility: hidden;
             }
 
-            33% {  
-                opacity: 0;              
+            33% {
+                visibility: hidden;
             }
 
             66% {
-                opacity: 100;
+                visibility: visible;
             }
-        }
+            90% {
+                visibility: hidden;
+            }
+        } 
 
         .red {
             background-color: red;
@@ -167,50 +202,52 @@
 <body>
 
     <!-- transition -->
-    <p>Bai 1</p>
-    <div class="login">
-        <div style="padding: 28px; text-align: center; color: white;">
-            <p>L O G I N</p>
-        </div>
-    </div>
-    <hr />
-    <br />
-    <p>Bai 2</p>
-    <div class="content">
-        <div class="img" style="background-color: red;"></div>
-        <div class="img" style="background-color: blue;"></div>
-        <div class="img" style="background-color: green;"></div>
-        <div class="img" style="background-color: yellow;"></div>
-        <div class="img" style="background-color: orange;"></div>
-        <div class="img" style="background-color: pink;"></div>
-        <div class="img" style="background-color: paleturquoise;"></div>
-        <div class="img" style="background-color: purple;"></div>
-        <div class="img" style="background-color: brown;"></div>
-    </div>
-    <hr />
-    <br />
-    <p>Bai 3</p>
-    <div class="heart"></div>
-    <hr />
-    <br />
-    <p>Bai 4</p>
-    <div class="start-action">
-        <div style="width: 150px; text-align: center;">
-            <p>START</p>
-        </div>
-        <div>
-            <div class="hoat-anh-1" style="width: fit-content;">
-                <p style="color: white; background-color: red; padding: 7px;">CODING</p>
-            </div>
-            <div class="hoat-anh-2" style="width: fit-content;">
-                <p style="color: white; background-color: blue; padding: 7px;">TEACHING</p>
-            </div>
-            <div class="hoat-anh-3" style="width: fit-content;">
-                <p style="color: white; background-color: green; padding: 7px;">LEARNING</p>
+    <div class="container">
+        <p>Bai 1</p>
+        <div class="login">
+            <div style="padding: 20px; text-align: center; color: white;">
+                <p>L O G I N</p>
             </div>
         </div>
-        <div style="width: 150px; text-align: center; margin-top:75px;">
-            <p>TODAY</p>
+        <hr />
+        <br />
+        <p>Bai 2</p>
+        <div class="content">
+            <div class="img" style="background-color: red;"></div>
+            <div class="img" style="background-color: blue;"></div>
+            <div class="img" style="background-color: green;"></div>
+            <div class="img" style="background-color: yellow;"></div>
+            <div class="img" style="background-color: orange;"></div>
+            <div class="img" style="background-color: pink;"></div>
+            <div class="img" style="background-color: paleturquoise;"></div>
+            <div class="img" style="background-color: purple;"></div>
+            <div class="img" style="background-color: brown;"></div>
+        </div>
+        <hr />
+        <br />
+        <p>Bai 3</p>
+        <div class="heart"></div>
+        <hr />
+        <br />
+        <p>Bai 4</p>
+        <div class="start-action">
+            <div style="width: 150px; text-align: center;">
+                <p>START</p>
+            </div>
+            <div>
+                <div class="hoat-anh-1" style="width: fit-content;">
+                    <p style="color: white; background-color: red; margin-left: 10px;">CODING</p>
+                </div>
+                <div class="hoat-anh-2" style="width: fit-content;">
+                    <p style="color: white; background-color: blue; margin-left: 10px;">TEACHING</p>
+                </div>
+                <div class="hoat-anh-3" style="width: fit-content;">
+                    <p style="color: white; background-color: green; margin-left: 10px;">LEARNING</p>
+                </div>
+            </div>
+            <div style="width: 150px; text-align: center; margin-top:65px;">
+                <p>TODAY</p>
+            </div>
         </div>
     </div>
 </body>
