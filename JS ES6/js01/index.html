@@ -91,8 +91,7 @@
         console.log("//Viết hàm đảo ngược chuỗi với đầu vào là 1 chuỗi string. Trả về chuỗi đảo ngược của chuỗi đó.");
         s1 = "Hello World!"
         function reverseString(s) {
-            var splitStr = s.split('');
-            return splitStr.reverse().join('');
+            return s.split('').reverse().join('');
         }
         console.log("Dao nguoc chuoi \"", s1, "\"la: ", reverseString(s1));
         console.log("");
@@ -114,7 +113,7 @@
             console.log("\"", s1, "\" khong phai la chuoi dao nguoc.")
         }
         if (symmetryStr(s2) == true) {
-            console.log("\"", s2, "\" la chuoi dao nguoc: ");
+            console.log("\"", s2, "\" la chuoi dao nguoc!");
         } else {
             console.log("\"", s2, "\" khong phai la chuoi dao nguoc.")
         }
@@ -138,26 +137,38 @@
         //bai 10
         console.log("//Viết hàm tìm ra số lớn thứ nhì trong mảng các số.");
         // chu y mang thuong so sanh theo chuoi, neu co nhieu gia tri lon nhat trong mang
-        var arr = [4, 5, 1, 2, 3, 9, 8, 6, 100];
-        var arr2 = arr.slice();
-        var n2 = arr2.length;
-        arr2.sort(function (a, b) { return a - b });
-        console.log("Phan tu lon thu nhi \"", arr, "\" la: ", arr2[n2 - 2]);
+        var arr = [4, 5, 100, 2, 3, 9, 8, 6, 100, 100, 100];
+        function findmax2(arr) {
+            var arr2 = arr.slice();
+            var n2 = arr2.length;
+            arr2.sort(function (a, b) { return a - b });
+            if (n2 < 1) {
+                return arr2[0];
+            }
+            else {
+                n2--;
+                while (n2 > 1 && arr2[n2] == arr2[n2 - 1]) {
+                    n2--;
+                }
+                return arr2[n2 - 1];
+            }
+        }
+        console.log("Phan tu lon thu nhi \"", arr, "\" la: ", findmax2(arr));
+        console.log("");
 
         //bai 11
         console.log("//Viết hàm truyền vào 1 mảng tên học viên, sắp xếp lại mảng này theo chiều ngược của bảng chữ cái.");
         function sort_Str(arr) {
             var arr2 = arr.slice();
-            arr2.sort();
+            arr2.sort((a, b) => a.localeCompare(b));
             arr2.reverse();
-            console.log("Sap xep nguoc cua mang\"", arr, "\" la: ", arr2);
+            return arr2;
         }
-        var arr = ['Nam', 'Hoa', 'Tuấn', 'Đức'];
-        var arr2 = arr.slice();
-        arr2.sort();
-        arr2.reverse();
-        console.log("Sap xep nguoc cua mang\"", arr, "\" la: ", arr2);
+        var arr = ['Nam', 'Hoa', 'Tuấn', 'Đức', "Hải", "Hà"];
+        console.log("Sap xep nguoc cua mang\"", arr, "\" la: ", sort_Str(arr));
+        console.log("");
 
+        //bai 12
         console.log("//Tính tổng các số chia hết cho 5 từ 0 -> 100");
         function sum(n) {
             var s = 0;
@@ -167,26 +178,37 @@
             return s;
         }
         console.log("tổng các số chia hết cho 5 từ 0 -> 100 là: ", sum(100));
+        console.log("");
 
+        //bai 13
         console.log("//Viết hàm cho phép truyền vào 1 mảng các số, kết quả trả về là 1 mảng mới với các số là số dư tương ứng khi chia mảng cũ cho 2");
         var arr = [4, 5, 1, 2, 3, 9, 8, 6, 100];
-        var arr3 = [];
-        for (var i = 0; i < arr.length; i++) {
-            arr3.push(arr[i] % 2);
+        function arrDiv2(arr) {
+            var arr3 = [];
+            for (var i = 0; i < arr.length; i++) {
+                arr3.push(arr[i] % 2);
+            }
+            return arr3;
         }
-        console.log("Mang so du cua mang\"", arr, "\" la: ", arr3);
+        console.log("Mang so du cua mang\"", arr, "\" la: ", arrDiv2(arr));
+        console.log("");
 
+        //bai 14
         console.log("//Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất.");
-        var arr = ["aba", "aa", "ad", "c", "vcd"];
-        var arr4 = [];
-        var max_l = arr[0].length;
-        for (var i = 0; i < arr.length; i++) {
-            if (max_l < arr[i].length) max_l = arr[i].length;
+        var arr = ["aba", "aa", "ad", "c", "vcd", "s", "ss", "sss"];
+        function findArrMax() {
+            var arr4 = [];
+            var max_l = arr[0].length;
+            for (var i = 0; i < arr.length; i++) {
+                if (max_l < arr[i].length) max_l = arr[i].length;
+            }
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].length == max_l) arr4.push(arr[i]);
+            }
+            return arr4;
         }
-        for (var i = 0; i < arr.length; i++) {
-            if (arr[i].length == max_l) arr4.push(arr[i]);
-        }
-        console.log("Cac phan tu dai nhat cua mang\"", arr, "\" la: ", arr4);
+        console.log("Cac phan tu dai nhat cua mang\"", arr, "\" la: ", findArrMax(arr));
+        console.log("");
 
     </script>
 </body>
