@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F0F2F5;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://techmaster.vn" target="_blank" method="POST">
+            <label for="#">User name:</label>
+            <br />
+            <input type="text" name="uname" required placeholder="Nhap ho ten cua ban">
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <input type="text" name="email" id="email">
+            <br />
+            <br />
+            <label for="pw">Password:</label>
+            <br />
+            <input type="password" name="pw" id="pw">
+            <br />
+            <br />
+            <label for="address">Address:</label>
+            <br />
+            <br />
+            <br />
+            <label for="">Gender:</label>
+            <br />
+            <input type="radio" name="gender" checked id="male" value="male">
+            <label for="">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="">Female</label>
+            <br />
+            <br />
+            <label for="habbit">Habit:</label>
+            <br />
+            <input type="checkbox" name="habbit" id="eat" value="an">
+            <label for="habbit">An</label>
+            <input type="checkbox" name="habbit" id="play" value="choi">
+            <label for="habbit">Choi</label>
+            <br>
+            <br>
+            <button type="submit">SEND</button>
+            <button type="reset">RESET</button>
+        </form>
+    </div>
+</body>
+
+</html>
