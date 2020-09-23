@@ -1,29 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai tap Number Object</title>
 </head>
+
 <body>
     <script>
         //Xu ly so
         //bai 1
         console.log("//Viết hàm tính thể tích hình cầu, với tham số truyền vào là bán kính của hình cầu.")
-        var value_pi=Math.PI;
+        const value_pi = Math.PI;
         function volumeGlobular(radius) {
             if (radius < 0) {
                 return false;
             }
             else {
-                return 4*value_pi*Math.pow(radius,3)/3;
+                return 4 * value_pi * Math.pow(radius, 3) / 3;
             }
         }
-        radius = 5;
-        console.log("The tich hinh cau co ban kinh \"", radius, "\" la: ", volumeGlobular(radius));
+        var radius = 5;
+        console.log("The tich hinh cau co ban kinh bang \"", radius, "\" la: ", volumeGlobular(radius), "(don vi the tich)");
         console.log("");
 
         //bai 2
+        console.log("//Viết hàm truyền vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng.")
+        function sumApprox(a, b) {
+            let s = 0;
+            for (let i = a + 1; i < b; i++) {
+                s += i;
+            }
+            return s;
+        }
+        var a = 2, b = 10;
+        console.log("Tong cac so trong khoang (", a, ",", b, ")la: ", sumApprox(a, b));
+        console.log("");
+
+        //bai 3
+        console.log("//Cho 1 số, kiểm tra xem số đó có phải là số nguyên tố hay không, kết quả trả về true hoặc false.")
+        function isPrime(a) {
+            if (a <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(a); i++) {
+                if (a % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(a, "la so nguyen to:", isPrime(a));
+        console.log(b, "la so nguyen to:", isPrime(b));
+        console.log("");
+
+        //bai 4
+        console.log("//Cho 1 số nguyên dương bất kỳ. Tính tổng tất cả các số nguyên tố mà nhỏ hơn hoặc bằng tham số truyền vào.")
+        function sumPrime(a) {
+            let s = 0;
+            for (let i = 2; i <= a; i++) {
+                if (isPrime(i)) {
+                    s += i;
+                }
+            }
+            return s;
+        }
+        a = 10;
+        console.log("Tong cac so trong khoang nguyen to nho hon hoac bang", a, "la:", sumPrime(a));
+        console.log("");
+
+        //bai 5
+        console.log("//Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó.")
+        function sumDivisor(a) {
+            let s = 0;
+            for (let i = 1; i <= a; i++) {
+                if (a % i == 0) {
+                    s += i;
+                }
+            }
+            return s;
+        }
+        a = 20;
+        console.log("Tong cac so trong khoang nguyen to nho hon hoac bang", a, "la:", sumDivisor(a));
+        console.log("");
+
+        //Xu ly Object
+        var user = {
+            name: "Trương Minh Thúy",
+            age: 25,
+            email: 'support@techmaster.vn'
+        };
+        //bai 6
+        console.log("//Viết hàm để lấy danh sách các key của object")
+        function keysObj(obj) {
+            console.log("Cac key cua object", obj, "la:", Object.keys(obj));
+            return 0;
+        }
+        keysObj(user);
+        console.log("");
+
+        //bai 7
+        console.log("//Viết hàm để lấy danh sách các value của object")
+        function valuesObj(obj) {
+            console.log("Cac value cua object", obj, "la:", Object.values(obj));
+            return 0;
+        }
+        valuesObj(user);
+        console.log("");
+
+        //bai 8
+        console.log("//Viết hàm kiểm tra key có tồn tại trong Object không");
+        function checkKey(key) {
+            return (key in user);
+        }
+        console.log("Check key \'name\' trong", user, "la:", checkKey('name'));
+        console.log("Check key \'study\' trong", user, "la:", checkKey('study'));
+        console.log("");
+
+        //bai 9
+        console.log("//Viết hàm kiểm tra Object có độ dài bao nhiêu");
+        function lengthObj(obj) {
+            return Object.keys(obj).length;
+        }
+        console.log("Do dai cua obj", user, "la:", lengthObj(user));
+        console.log("");
+
+        //bai 10
+        var arrUser = [{ name: "Nguyễn Văn A", age: 24, isStatus: true }, { name: "Nguyễn Văn B", age: 23, isStatus: true },
+        { name: "Nguyễn Văn C", age: 25, isStatus: true }, { name: "Nguyễn Văn D", age: 26, isStatus: true },
+        { name: "Nguyễn Văn E", age: 28, isStatus: false }, { name: "Nguyễn Văn F", age: 27, isStatus: true },
+        { name: "Nguyễn Văn G", age: 32, isStatus: true }, { name: "Nguyễn Văn H", age: 30, isStatus: false }];
+        console.log("//Viết function lấy ra những user có tuổi > 25 và isStatus = true.")
+        var arr2 = [];
+        function checkUser(arr) {
+            for (let index = 0; index < arr.length; index++) {
+                if ((arr[index].age > 25) && (arr[index].isStatus == true)) {
+                    arr2.push(arr[index]);
+                }
+            }
+            console.log("User thoa man dieu kien la:", arr2);
+        }
+        checkUser(arrUser);
+        console.log("");
+
+        //bai 11
+        console.log("//Viết function sắp xếp các user theo tuổi tăng dần.")
+        function sortUser(arr) {
+            let temp = {};
+            for (let i = 0; i < arr.length - 1; i++) {
+                for (let j = i+1; j < arr.length; j++) {
+                    if (arr[i].age > arr[j].age) {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+        }
+        sortUser(arrUser);
+        console.log("Danh sach user duoc sap xep la:", arrUser);
+        console.log("");
+
     </script>
 </body>
+
 </html>
