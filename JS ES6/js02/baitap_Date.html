@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap Date</title>
+</head>
+
+<body>
+    <script>
+        console.log("Lưu ý các tháng trong dữ liệu Date bắt đầu từ 0!!")
+        //bai 1
+        console.log("//Viết một hàm JavaScript để lấy ngày hiện tại. Lưu ý: Truyền dấu phân tách làm đối số.")
+        function getCurrentDate(ch) {
+            let date = new Date();
+            let data = date.getDate() + ch;
+            data += (date.getMonth() + 1) + ch;
+            data += date.getFullYear();
+            console.log(data);
+            return 0;
+        }
+        getCurrentDate("/");
+        console.log("");
+
+        //bai 2
+        console.log("//Viết một hàm JavaScript để lấy số ngày trong tháng bất kỳ.")
+        function getDaysInMonth(month, year) {
+            let monthLength = 0;
+            if ((month < 1) || (month > 12)) {
+                return "Khong co thang " + month + " trong nam " + year + "!";
+            }
+            else {
+                let monthStart = new Date(year, month - 1, 1);
+                let monthEnd = new Date(year, month, 1);
+                monthLength = (monthEnd - monthStart) / (1000 * 60 * 60 * 24);
+            }
+            return monthLength;
+        }
+        console.log("So ngay trong thang 0 nam 1000 la:", getDaysInMonth(0, 1000));
+        console.log("So ngay trong thang 2 nam 2019 la:", getDaysInMonth(2, 2019));
+        console.log("So ngay trong thang 2 nam 1000 la:", getDaysInMonth(2, 2020));
+        console.log("So ngay trong thang 12 nam 1000 la:", getDaysInMonth(12, 2020));
+        console.log("");
+
+        //bai 3
+        console.log("//Viết một hàm JavaScript để kiểm tra xem một ngày có phải là ngày cuối tuần hay không.")
+        function getDayOfDate(dd, mm, yyyy) {
+            if (mm < 1 || mm > 12) {
+                console.log("Khong co thang", mm, "!");
+                return false;
+            } else {
+                so_ngay = getDaysInMonth(mm, yyyy);
+                if (dd < 1 || dd > so_ngay) {
+                    console.log("Khong co ngay", dd, "!");
+                    return false;
+                }
+            }
+            let date = new Date();
+            date.setDate(dd);
+            date.setMonth(mm - 1);
+            date.setFullYear(yyyy);
+            if (date.getDay() == 0 || date.getDay() == 6) {
+                console.log("Ngay", dd, "thang", mm, "nam", yyyy, "la ngay cuoi tuan");
+            } else {
+                console.log("ngay", dd, 'thang', mm, "nam", yyyy, " khong phai ngay cuoi tuan");
+            }
+            return 0;
+        }
+        getDayOfDate(23, 9, 2019);
+        getDayOfDate(28, 9, 2019);
+        getDayOfDate(26, 9, 2020);
+        getDayOfDate(27, 9, 2020);
+        getDayOfDate(1, 10, 2020);
+        getDayOfDate(1, 15, 2020);
+        console.log("");
+
+        //bai 4
+        console.log("//Viết một hàm JavaScript sẽ trả về định dạng giờ:phút theo số phút truyền vào.")
+        function get_Hour(minute) {
+            let hh, mm;
+            if (minute < 60) {
+                hh = 0;
+                mm = minute;
+            } else {
+                hh = parseInt(minute / 60);
+                mm = minute % 60;
+            }
+            console.log(minute, "phut tuong duong voi", hh, "gio", mm, "phut")
+            return 0;
+        }
+        get_Hour(59);
+        get_Hour(60);
+        get_Hour(123);
+        console.log("");
+
+        //bai 5
+        console.log("//Viết một hàm JavaScript để đếm số ngày đã trôi qua kể từ đầu năm.")
+        function getDaysInMonth2(dd, mm, yyyy) {
+            if (mm < 1 || mm > 12) {
+                console.log("Khong co thang", mm, "!");
+                return false;
+            } else {
+                so_ngay = getDaysInMonth(mm, yyyy);
+                if (dd < 1 || dd > so_ngay) {
+                    console.log("Khong co ngay", dd, "!");
+                    return false;
+                }
+            }
+            let monthStart = new Date(yyyy, 0, 1);
+            let monthEnd = new Date(yyyy, mm - 1, dd);
+            let monthLength = (monthEnd - monthStart) / (1000 * 60 * 60 * 24)
+            console.log("So ngay tu dau nam", yyyy, "den ngay", dd, "thang", mm, "nam", yyyy, "la:", monthLength);
+            return 0;
+        }
+        getDaysInMonth2(23, 9, 2020);
+        getDaysInMonth2(1, 9, 2019);
+        getDaysInMonth2(23, 13, 2020);
+        console.log("");
+
+        //bai 6
+        console.log("//Viết chương trình JavaScript để tính tuổi.")
+        function calculate_age(dd, mm, yyyy) {
+            if (mm < 1 || mm > 12) {
+                console.log("Khong co thang", mm, "!");
+                return false;
+            } else {
+                so_ngay = getDaysInMonth(mm, yyyy);
+                if (dd < 1 || dd > so_ngay) {
+                    console.log("Khong co ngay", dd, "!");
+                    return false;
+                }
+            }
+            let birthDay = new Date(yyyy, mm - 1, dd);
+            let today = new Date();
+            let age = (today - birthDay) / (1000 * 60 * 60 * 24 * 365.25)
+            console.log("So tuoi tinh tu", dd, "thang", mm, "nam", yyyy, "den hom nay la:", parseInt(age), "tuoi.");
+            return 0;
+        }
+        calculate_age(23, 12, 2000);
+        calculate_age(20, 04, 1994);
+        console.log("");
+
+        //bai7
+        console.log("//Viết một hàm JavaScript để lấy ngày bắt đầu của tuần.")
+        let d1 = new Date(2020, 8, 12);
+        let d2 = new Date();
+        function startOfWeek(date) {
+            let date2;
+            let dd = date.getDate();
+            let mm = date.getMonth();
+            let yyyy = date.getFullYear();
+            if (date.getDay() == 0) {
+                if (d < 7) {
+                    yyyy = (mm > 0) ? yyyy : yyyy--;
+                    mm == (mm > 0) ? mm-- : 11;
+                    dd = getDaysInMonth(mm) - 6 + dd;
+                    date2 = new Date(yyyy, mm, dd);
+                } else {
+                    // dd
+                }
+            } else {
+                console.log("ngay", dd, 'thang', mm, "nam", yyyy, " khong phai ngay cuoi tuan");
+            }
+            return 0;
+        }
+    </script>
+</body>
+
+</html>

@@ -29,7 +29,9 @@
         console.log("//Viết hàm truyền vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng.")
         function sumApprox(a, b) {
             let s = 0;
-            for (let i = a + 1; i < b; i++) {
+            let min = (a < b) ? a : b;
+            let max = (a > b) ? a : b;
+            for (let i = min + 1; i < max; i++) {
                 s += i;
             }
             return s;
@@ -147,7 +149,7 @@
         function sortUser(arr) {
             let temp = {};
             for (let i = 0; i < arr.length - 1; i++) {
-                for (let j = i+1; j < arr.length; j++) {
+                for (let j = i + 1; j < arr.length; j++) {
                     if (arr[i].age > arr[j].age) {
                         temp = arr[i];
                         arr[i] = arr[j];
