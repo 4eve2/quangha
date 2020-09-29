@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 5px;
+        }
+        caption {
+            caption-side: top;
+        }
+        tr:nth-child(even) {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- dropdown list -->
+    <label for="car">Chon mot hang xe:</label>
+    <select name="car" id="car">
+        <option value="toyota">toyota</option>
+        <option value="huyndai" selected>huyndai</option>
+        <option value="cheverlet">cheverlet</option>
+        <option value="acc">acc</option>
+        <option value="vinfast">vinfast</option>
+    </select>
+    <!-- bai ve nha lam mau dang ky facebook -->
+    <br />
+    <br />
+    <!-- Table -->
+    <table>
+        <caption>Danh sach</caption>
+        <tr>
+            <th>STT</th>
+            <th>Ho ten</th>
+            <th>Dia chi</th>
+            <th>Ghi chu</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Nguyen Van A</td>
+            <td>HN</td>
+            <td>chua 18</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Nguyen Van B</td>
+            <td>HN</td>
+            <td>chua 18</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Nguyen Van C</td>
+            <td>HN</td>
+            <td>chua 18</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td colspan="2">Khong co</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
