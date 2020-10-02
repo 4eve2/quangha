@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai tap Array</title>
+    <script src=""></script>
 </head>
 
 <body>
     <script>
+        // Tao ham xoa phan tu trung nhau trong 1 mang
+        function removeDup(arr) {
+            let arr2 = arr.slice();
+            for (let i = 0; i < arr2.length - 1; i++) {
+                for (let j = i + 1; j < arr2.length; j++) {
+                    if (arr2[i] == arr2[j]) {
+                        arr2.splice(j, 1);
+                        j--;
+                    }
+                }
+            }
+            return arr2;
+        }
         //bai 1
         console.log("//Viết chương trình JavaScript để lấy một phần tử ngẫu nhiên từ một mảng");
         function randomItems(arr) {
@@ -16,7 +30,8 @@
             let random = Math.floor(Math.random() * n);
             return arr[random];
         }
-        let arr = [10, 4, 7, 19, 5, 27, 45, 11, 33, 0];
+        let arr = [33, 10, 11, 7, 19, 11, 5, 27, 45, 4, 11, 33, 0, 10, 10, 10, 11, 10, 11];
+        console.log("Mang la:", arr);
         for (let index = 1; index <= 10; index++) {
             console.log("Phan tu ngau nhien thu", index, "la: ", randomItems(arr))
         }
@@ -37,7 +52,7 @@
             }
             return arr2;
         }
-        console.log("Sap xep ngau nhien mang", arr, "la: ", randomSort(arr))
+        console.log("Sap xep ngau nhien mang", arr, "la:\n", randomSort(arr))
         console.log("");
 
         //tao mang ngau nhien
@@ -66,11 +81,12 @@
         console.log("//Viết chương trình JavaScript để lấy một mảng các phần tử xuất hiện trong cả hai mảng:");
         console.log("Mang thu nhat:", arr);
         console.log("Mang thu hai:", arr2);
+        arr = removeDup(arr);
         console.log("Cac phan tu co trong ca 2 mang tren la:", arrSimilarity(arr, arr2));
         console.log("");
 
         //bai4
-        console.log("//Viết một chương trình JavaScript để lấy sự phần tử không xuất hiện ở cả 2 mảng:");
+        console.log("//Viết một chương trình JavaScript để lấy phần tử không xuất hiện ở cả 2 mảng:");
         console.log("Mang thu nhat:", arr);
         console.log("Mang thu hai:", arr2);
         function arrSymmetricDifference(arr1, arr2) {
@@ -110,32 +126,12 @@
         console.log("Mang thu nhat:", arr);
         console.log("Mang thu hai:", arr2);
         function union(arr1, arr2) {
-            let arr = [];
-            for (let i = 0; i < arr1.length; i++) {
-                let chk = true;
-                for (let j = 0; j < arr.length; j++) {
-                    if (arr1[i] == arr[j]) {
-                        chk = false;
-                        break;
-                    }
-                }
-                if (chk) {
-                    arr.push(arr1[i]);
-                }
-            }
+            let arr = arr1.slice();
             for (let i = 0; i < arr2.length; i++) {
-                let chk = true;
-                for (let j = 0; j < arr.length; j++) {
-                    if (arr2[i] == arr[j]) {
-                        chk = false;
-                        break;
-                    }
-                }
-                if (chk) {
-                    arr.push(arr2[i]);
-                }
+                arr.push(arr2[i]);
             }
-            return arr;
+            let arr_new = removeDup(arr);
+            return arr_new;
         }
         console.log("Cac phan tu trong 2 mang tren tung doi mot khac nhau la:", union(arr, arr2));
         console.log("");
@@ -220,7 +216,7 @@
                 return "FALSE"
             }
             else {
-                let arr = num.toString().split("");
+                let arr = num.toString().split('');
                 let n = arr.length;
                 let so = "";
                 if (n == 1) {
@@ -273,40 +269,24 @@
         console.log("");
 
         //bai 12
-        function removeDuplicate(arr) {
-            let arr2 = [];
-            for (let i = 0; i < arr.length; i++) {
-                let chk = true;
-                for (let j = 0; j < arr2.length; j++) {
-                    if (arr[i] == arr2[j]) {
-                        chk = false;
-                        break;
-                    }
-                }
-                if (chk) {
-                    arr2.push(arr[i]);
-                }
-            }
-            return arr2;
-        }
-        let arr3 = randomArr(15);
+        let arr3 = randomArr(20);
         console.log("Mang la:", arr3)
         console.log("//Viết chương trình remove những phần tử bị trùng nhau trong mảng:");
-        console.log("Xoa cac phan tu trung nhau cua mang tren la:", removeDuplicate(arr3));
+        console.log("Xoa cac phan tu trung nhau cua mang tren la:", removeDup(arr3));
 
         //bai 13
         function findDuplicate(arr1) {
-            let arr2 = arr1.slice();
-            let arr = [];
-            for (let i = 0; i < arr1.length; i++) {
-                for (let j = i + 1; j < arr2.length; j++) {
-                    if (arr1[i] == arr2[j]) {
-                        arr.push(arr1[i]);
+            let arr2 = [];
+            if (arr1.length < 1) return arr;
+            for (let i = 0; i < arr1.length - 1; i++) {
+                for (let j = i + 1; j < arr1.length; j++) {
+                    if (arr1[i] == arr1[j]) {
+                        arr2.push(arr1[i]);
                         break;
                     }
                 }
             }
-            return arr;
+            return removeDup(arr2);
         }
         console.log("//Viết chương trình tìm những phần tử bị trùng nhau trong mảng:");
         console.log("Cac phan tu trung nhau cua mang tren la:", findDuplicate(arr3));
@@ -316,7 +296,7 @@
         console.log("//Viết function trả về true nếu chuỗi trong phần tử đầu tiên của mảng chứa tất cả các chữ cái của chuỗi trong phần tử thứ hai");
         function mutation(s1, s2) {
             s1 = s1.toLowerCase();
-            let a2 = s2.toLowerCase().split("");
+            let a2 = s2.toLowerCase().split('');
             for (let i = 0; i < a2.length; i++) {
                 if (s1.indexOf(a2[i]) < 0) {
                     return false;
@@ -359,30 +339,36 @@
         console.log("// Viết function chia mảng thành các mảng con có độ dài bằng kích thước (đối số thứ hai) và trả về chúng dưới dạng mảng hai chiều.");
         function chunkArrayInGroups(arr, x) {
             var n = arr.length;
-            if (x <= 0 || n == 0 || (x > 0 && (n / x) != 2) || x > n) {
+            if (x <= 0 || n == 0 || (x > 0 && (n % x) != 0) || x > n) {
                 return "FALSE";
             }
             else {
-                let arr1 = [], arr2 = [];
-                for (let i = 0; i < x; i++) {
-                    arr1.push(arr[i]);
-                    arr2.push(arr[i + x]);
+                let num_row = parseInt(n / x);
+                let arr2D = new Array();
+                for (let j = 0; j < num_row; j++) {
+                    arr2D[j] = new Array();
                 }
-                return [arr1, arr2];
+                for (let i = 0; i < x; i++) {
+                    for (let j = 0; j < num_row; j++) {
+                        arr2D[j].push(arr[j * x + i]);
+                    }
+                }
+                return arr2D;
             }
         }
+        let div1 = 1;
+        let div2 = 2;
+        let div3 = 3;
+        let div4 = 6;
         let arr_1 = ["a", "b", "c", "d"];
-        let div1 = 2;
         let arr_2 = [0, 1, 2, 3, 4, 5];
-        let div2 = 3;
-        let div3 = 1;
         let arr_3 = [];
         let arr_4 = ["asd", 5, "", [1, 2, 3, 4], "2", { name: "Ha", age: 26 }];
-        console.log("Chia", arr_1, "thanh 2 mang ma moi mang co", div1, "phan tu la:", chunkArrayInGroups(arr_1, div1));
-        console.log("Chia", arr_2, "thanh 2 mang ma moi mang co", div2, "phan tu la:", chunkArrayInGroups(arr_2, div2));
-        console.log("Chia", arr_2, "thanh 2 mang ma moi mang co", div3, "phan tu la:", chunkArrayInGroups(arr_2, div3));
-        console.log("Chia", arr_3, "thanh 2 mang ma moi mang co", div3, "phan tu la:", chunkArrayInGroups(arr_3, div3));
-        console.log("Chia", arr_4, "thanh 2 mang ma moi mang co", div2, "phan tu la:", chunkArrayInGroups(arr_4, div2));
+        console.log("Chia", arr_1, "thanh mang hai chieu ma moi mang co", div1, "phan tu la:", chunkArrayInGroups(arr_1, div1));
+        console.log("Chia", arr_2, "thanh mang hai chieu ma moi mang co", div2, "phan tu la:", chunkArrayInGroups(arr_2, div2));
+        console.log("Chia", arr_2, "thanh mang hai chieu ma moi mang co", div3, "phan tu la:", chunkArrayInGroups(arr_2, div3));
+        console.log("Chia", arr_3, "thanh mang hai chieu ma moi mang co", div3, "phan tu la:", chunkArrayInGroups(arr_3, div3));
+        console.log("Chia", arr_4, "thanh mang hai chieu ma moi mang co", div2, "phan tu la:", chunkArrayInGroups(arr_4, div2));
         console.log("");
 
     </script>

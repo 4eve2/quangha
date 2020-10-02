@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var mm = 2, yyyy = 2020;
+        var input1 = prompt("Nhap thang:");
+        var input2 = prompt("Nhap nam:");
+        var so_ngay = function (mm, yyyy) {
+            switch (mm) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12: {
+                    return "So ngay la 31";
+                    break;
+                }
+                case 4:
+                case 6:
+                case 9:
+                case 11: {
+                    return "So ngay la 30";
+                    break;
+                }
+                case 2: {
+                    if (yyyy % 400 == 0 || (yyyy % 4 == 0 && yyyy % 100 != 0)) {
+                        return "So ngay la 29";
+                    } else {
+                        return "So ngay la 28";
+                    }
+                    break;
+                }
+            }
+            return 0;
+        }
+        console.log(so_ngay(parseInt(input1), parseInt(input2)));
+
+        var arr=[1,0,2,3];
+        console.log(arr[1]);
+    </script>
+
+</body>
+
+</html>
