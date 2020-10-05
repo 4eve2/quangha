@@ -1,217 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        //bai 1
-        console.log("//Viết 1 function kiểm tra 1 chuỗi có nằm trong chuỗi còn lại hay không.")
-        var s1, s2;
-        function checkStringExist(s1, s2) {
-            if (s1.indexOf(s2) > -1) {
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
-        s1 = "i love you";
-        console.log("\"you\" trong \"", s1, "\" la: ", checkStringExist(s1, "you"));
-        console.log("\"hate\" trong \"", s1, "\" la: ", checkStringExist(s1, "hate"));
-        console.log("");
-
-        //bai 2
-        console.log("//Viết hàm rút ngắn chuỗi bằng cách cắt ra 8 ký tự đầu của 1 chuỗi và thêm dấu ba chấm ở cuối chuỗi.")
-        s1 = "Xin chao cac ban";
-        s2 = "Hello!"
-        function shortenString(s) {
-            if (s.length > 8) {
-                return s.substr(0, 8) + "...";
-            }
-            else {
-                return s;
-            }
-        }
-        console.log("Rut gon chuoi \"", s1, "\" la: ", shortenString(s1));
-        console.log("Rut gon chuoi \"", s2, "\" la: ", shortenString(s2));
-        console.log("")
-
-        //bai 3
-        console.log("//Viết hàm có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.")
-        s1 = "chÀo MừnG đẾn với techMaster";
-        function capitalizeString(s) {
-            var splitStr = s.toLowerCase().split(' ');
-            for (var i = 0; i < splitStr.length; i++) {
-                splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-            }
-            return splitStr.join(' ');
-        }
-        console.log("Chuyen doi chuoi\"", s1, "\" thanh chuoi: ", capitalizeString(s1));
-        console.log("");
-
-        //bai 4
-        console.log("//Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần.");
-        s1 = "he"
-        function repeatString_10(s1) {
-            var s = "";
-            for (var i = 0; i < 10; i++) {
-                s = s.concat(s1);
-            }
-            return s;
-        }
-        console.log("Lap chuoi \"", s1, "\" 10 lan: ", repeatString_10(s1));
-        console.log("");
-
-        //bai 5
-        console.log("//Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang.");
-        function repeatString(s1, n) {
-            var s = "";
-            for (var i = 0; i < n - 1; i++) {
-                s = s.concat(s1, '-');
-            }
-            s = s.concat(s1);
-            return s;
-        }
-        console.log("Lap chuoi \"", s1, "\" 10 lan va dau gach ngang: ", repeatString(s1, 10));
-        console.log("");
-
-        //bai 6
-        console.log("//Cho 1 chuỗi và 1 số nguyên n > 1, hãy viết hàm có tác dụng sao chép đó chuỗi lên n lần, ngăn cách nhau bởi dấu gạch ngang.");
-        s2 = "hi"
-        var n = 5;
-        console.log("Lap chuoi \"", s2, "\"", n, " lan va dau gach ngang: ", repeatString(s2, 5));
-        console.log("");
-
-        //bai 7
-        console.log("//Viết hàm đảo ngược chuỗi với đầu vào là 1 chuỗi string. Trả về chuỗi đảo ngược của chuỗi đó.");
-        s1 = "Hello World!"
-        function reverseString(s) {
-            return s.split('').reverse().join('');
-        }
-        console.log("Dao nguoc chuoi \"", s1, "\"la: ", reverseString(s1));
-        console.log("");
-
-        //bai 8
-        console.log("//Cho 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không.");
-        s1 = "hello world";
-        s2 = "Race car";
-        function symmetryStr(s) {
-            var str = s.replace(/\s+/g, '');
-            var splitStr = str.toLowerCase().split('');
-            var str1 = splitStr.join('');
-            var str2 = splitStr.reverse().join('');
-            return (str1 == str2);
-        }
-        if (symmetryStr(s1) == true) {
-            console.log("\"", s1, "\" la chuoi dao nguoc: ");
+      //bai 1
+      console.log(
+        "//Viết 1 function kiểm tra 1 chuỗi có nằm trong chuỗi còn lại hay không."
+      );
+      var s1, s2;
+      function checkStringExist(s1, s2) {
+        if (s1.indexOf(s2) > -1) {
+          return true;
         } else {
-            console.log("\"", s1, "\" khong phai la chuoi dao nguoc.")
+          return false;
         }
-        if (symmetryStr(s2) == true) {
-            console.log("\"", s2, "\" la chuoi dao nguoc!");
+      }
+      s1 = "i love you";
+      console.log('"you" trong "', s1, '" la: ', checkStringExist(s1, "you"));
+      console.log('"hate" trong "', s1, '" la: ', checkStringExist(s1, "hate"));
+      console.log("");
+
+      //bai 2
+      console.log(
+        "//Viết hàm rút ngắn chuỗi bằng cách cắt ra 8 ký tự đầu của 1 chuỗi và thêm dấu ba chấm ở cuối chuỗi."
+      );
+      s1 = "Xin chao cac ban";
+      s2 = "Hello!";
+      function shortenString(s) {
+        if (s.length > 8) {
+          return s.substr(0, 8) + "...";
         } else {
-            console.log("\"", s2, "\" khong phai la chuoi dao nguoc.")
+          return s;
         }
-        console.log("");
+      }
+      console.log('Rut gon chuoi "', s1, '" la: ', shortenString(s1));
+      console.log('Rut gon chuoi "', s2, '" la: ', shortenString(s2));
+      console.log("");
 
-        //bai 9
-        console.log("//Viết hàm tìm ra số nhỏ nhất trong mảng các số.");
-        var arr = [4, 5, 1, 2, 3, 9, 8, 6];
-        function find_min(arr) {
-            var min = arr[0];
-            for (var i = 0; i < arr.length; i++) {
-                if (arr[i] < min) {
-                    min = arr[i];
-                }
-            }
-            return min;
+      //bai 3
+      console.log(
+        "//Viết hàm có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên."
+      );
+      s1 = "chÀo MừnG đẾn với techMaster";
+      function capitalizeString(s) {
+        var splitStr = s.toLowerCase().split(" ");
+        for (var i = 0; i < splitStr.length; i++) {
+          splitStr[i] =
+            splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
         }
-        console.log("Phan tu nho nhat trong mang \"", arr, "\" la: ", find_min(arr));
-        console.log("");
+        return splitStr.join(" ");
+      }
+      console.log(
+        'Chuyen doi chuoi"',
+        s1,
+        '" thanh chuoi: ',
+        capitalizeString(s1)
+      );
+      console.log("");
 
-        //bai 10
-        console.log("//Viết hàm tìm ra số lớn thứ nhì trong mảng các số.");
-        // chu y mang thuong so sanh theo chuoi, chu y truong hop neu co nhieu gia tri lon nhat trong mang
-        var arr = [4, 5, 100, 2, 3, 9, 8, 6, 100, 100, 100];
-        function findmax2(arr) {
-            var arr2 = arr.slice();
-            var n2 = arr2.length;
-            arr2.sort(function (a, b) { return a - b });
-            if (n2 < 1) {
-                return arr2[0];
-            }
-            else {
-                n2--;
-                while (n2 > 1 && arr2[n2] == arr2[n2 - 1]) {
-                    n2--;
-                }
-                return arr2[n2 - 1];
-            }
+      //bai 4
+      console.log(
+        "//Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần."
+      );
+      s1 = "he";
+      function repeatString_10(s1) {
+        var s = "";
+        for (var i = 0; i < 10; i++) {
+          s = s.concat(s1);
         }
-        console.log("Phan tu lon thu nhi \"", arr, "\" la: ", findmax2(arr));
-        console.log("");
+        return s;
+      }
+      console.log('Lap chuoi "', s1, '" 10 lan: ', repeatString_10(s1));
+      console.log("");
 
-        //bai 11
-        console.log("//Viết hàm truyền vào 1 mảng tên học viên, sắp xếp lại mảng này theo chiều ngược của bảng chữ cái.");
-        function sort_Str(arr) {
-            var arr2 = arr.slice();
-            arr2.sort((a, b) => a.localeCompare(b));
-            arr2.reverse();
-            return arr2;
+      //bai 5
+      console.log(
+        "//Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang."
+      );
+      function repeatString(s1, n) {
+        var s = "";
+        for (var i = 0; i < n - 1; i++) {
+          s = s.concat(s1, "-");
         }
-        var arr = ['Nam', 'Hoa', 'Tuấn', 'Đức', "Hải", "Hà"];
-        console.log("Sap xep nguoc cua mang\"", arr, "\" la: ", sort_Str(arr));
-        console.log("");
+        s = s.concat(s1);
+        return s;
+      }
+      console.log(
+        'Lap chuoi "',
+        s1,
+        '" 10 lan va dau gach ngang: ',
+        repeatString(s1, 10)
+      );
+      console.log("");
 
-        //bai 12
-        console.log("//Tính tổng các số chia hết cho 5 từ 0 -> 100");
-        function sum(n) {
-            var s = 0;
-            for (var i = 0; i <= n; i++) {
-                if (i % 5 == 0) s += i;
-            }
-            return s;
+      //bai 6
+      console.log(
+        "//Cho 1 chuỗi và 1 số nguyên n > 1, hãy viết hàm có tác dụng sao chép đó chuỗi lên n lần, ngăn cách nhau bởi dấu gạch ngang."
+      );
+      s2 = "hi";
+      var n = 5;
+      console.log(
+        'Lap chuoi "',
+        s2,
+        '"',
+        n,
+        " lan va dau gach ngang: ",
+        repeatString(s2, 5)
+      );
+      console.log("");
+
+      //bai 7
+      console.log(
+        "//Viết hàm đảo ngược chuỗi với đầu vào là 1 chuỗi string. Trả về chuỗi đảo ngược của chuỗi đó."
+      );
+      s1 = "Hello World!";
+      function reverseString(s) {
+        return s.split("").reverse().join("");
+      }
+      console.log('Dao nguoc chuoi "', s1, '"la: ', reverseString(s1));
+      console.log("");
+
+      //bai 8
+      console.log(
+        "//Cho 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không."
+      );
+      s1 = "hello world";
+      s2 = "Race car";
+      function symmetryStr(s) {
+        var str = s.replace(/\s+/g, "");
+        var splitStr = str.toLowerCase().split("");
+        var str1 = splitStr.join("");
+        var str2 = splitStr.reverse().join("");
+        return str1 == str2;
+      }
+      if (symmetryStr(s1) == true) {
+        console.log('"', s1, '" la chuoi dao nguoc: ');
+      } else {
+        console.log('"', s1, '" khong phai la chuoi dao nguoc.');
+      }
+      if (symmetryStr(s2) == true) {
+        console.log('"', s2, '" la chuoi dao nguoc!');
+      } else {
+        console.log('"', s2, '" khong phai la chuoi dao nguoc.');
+      }
+      console.log("");
+
+      //bai 9
+      console.log("//Viết hàm tìm ra số nhỏ nhất trong mảng các số.");
+      var arr = [4, 5, 1, 2, 3, 9, 8, 6];
+      function find_min(arr) {
+        var min = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] < min) {
+            min = arr[i];
+          }
         }
-        console.log("tổng các số chia hết cho 5 từ 0 -> 100 là: ", sum(100));
-        console.log("");
+        return min;
+      }
+      console.log(
+        'Phan tu nho nhat trong mang "',
+        arr,
+        '" la: ',
+        find_min(arr)
+      );
+      console.log("");
 
-        //bai 13
-        console.log("//Viết hàm cho phép truyền vào 1 mảng các số, kết quả trả về là 1 mảng mới với các số là số dư tương ứng khi chia mảng cũ cho 2");
-        var arr = [4, 5, 1, 2, 3, 9, 8, 6, 100];
-        function arrDiv2(arr) {
-            var arr3 = [];
-            for (var i = 0; i < arr.length; i++) {
-                arr3.push(arr[i] % 2);
-            }
-            return arr3;
+      //bai 10
+      console.log("//Viết hàm tìm ra số lớn thứ nhì trong mảng các số.");
+      // chu y mang thuong so sanh theo chuoi, chu y truong hop neu co nhieu gia tri lon nhat trong mang
+      var arr = [4, 5, 100, 2, 3, 9, 8, 6, 100, 100, 100];
+      function findmax2(arr) {
+        var arr2 = arr.slice();
+        var n2 = arr2.length;
+        arr2.sort(function (a, b) {
+          return a - b;
+        });
+        if (n2 < 1) {
+          return arr2[0];
+        } else {
+          n2--;
+          while (n2 > 1 && arr2[n2] == arr2[n2 - 1]) {
+            n2--;
+          }
+          return arr2[n2 - 1];
         }
-        console.log("Mang so du cua mang\"", arr, "\" la: ", arrDiv2(arr));
-        console.log("");
+      }
+      console.log('Phan tu lon thu nhi "', arr, '" la: ', findmax2(arr));
+      console.log("");
 
-        //bai 14
-        console.log("//Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất.");
-        var arr = ["aba", "aa", "ad", "c", "vcd", "s", "ss", "sss"];
-        function findArrMax() {
-            var arr4 = [];
-            var max_l = arr[0].length;
-            for (var i = 0; i < arr.length; i++) {
-                if (max_l < arr[i].length) max_l = arr[i].length;
-            }
-            for (var i = 0; i < arr.length; i++) {
-                if (arr[i].length == max_l) arr4.push(arr[i]);
-            }
-            return arr4;
+      //bai 11
+      console.log(
+        "//Viết hàm truyền vào 1 mảng tên học viên, sắp xếp lại mảng này theo chiều ngược của bảng chữ cái."
+      );
+      function sort_Str(arr) {
+        var arr2 = arr.slice();
+        arr2.sort((a, b) => a.localeCompare(b));
+        arr2.reverse();
+        return arr2;
+      }
+      var arr = ["Nam", "Hoa", "Tuấn", "Đức", "Hải", "Hà"];
+      console.log('Sap xep nguoc cua mang"', arr, '" la: ', sort_Str(arr));
+      console.log("");
+
+      //bai 12
+
+      console.log("//Tính tổng các số chia hết cho 5 từ 0 -> 100");
+      function sum(n) {
+        var s = 0;
+        for (var i = 0; i <= n; i++) {
+          if (i % 5 == 0) s += i;
         }
-        console.log("Cac phan tu dai nhat cua mang\"", arr, "\" la: ", findArrMax(arr));
-        console.log("");
-        //end.
+        return s;
+      }
+      console.log("tổng các số chia hết cho 5 từ 0 -> 100 là: ", sum(100));
+      console.log("");
 
+      //bai 13
+      console.log(
+        "//Viết hàm cho phép truyền vào 1 mảng các số, kết quả trả về là 1 mảng mới với các số là số dư tương ứng khi chia mảng cũ cho 2"
+      );
+      var arr = [4, 5, 1, 2, 3, 9, 8, 6, 100];
+      function arrDiv2(arr) {
+        var arr3 = [];
+        for (var i = 0; i < arr.length; i++) {
+          arr3.push(arr[i] % 2);
+        }
+        return arr3;
+      }
+      console.log('Mang so du cua mang"', arr, '" la: ', arrDiv2(arr));
+      console.log("");
+
+      //bai 14
+      console.log(
+        "//Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất."
+      );
+      var arr = ["aba", "aa", "ad", "c", "vcd", "s", "ss", "sss"];
+      function findArrMax() {
+        var arr4 = [];
+        var max_l = arr[0].length;
+        for (var i = 0; i < arr.length; i++) {
+          if (max_l < arr[i].length) max_l = arr[i].length;
+        }
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i].length == max_l) arr4.push(arr[i]);
+        }
+        return arr4;
+      }
+      console.log(
+        'Cac phan tu dai nhat cua mang"',
+        arr,
+        '" la: ',
+        findArrMax(arr)
+      );
+      console.log("");
+      //end.
     </script>
-</body>
-
+  </body>
 </html>

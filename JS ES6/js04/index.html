@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      var personObj1 = {
+        name: "Alex",
+        age: 30,
+      };
+
+      var person = personObj1;
+      person.age = 25;
+
+      person = {
+        name: "John",
+        age: 50,
+      };
+
+      var personObj2 = person;
+
+      console.log(1 < 2 < 3); //(1)
+      console.log(3 > 2 > 1); //(2)
+      const ob = {
+        a: 1,
+        b: 1,
+        a: 2,
+      };
+      let b = 4;
+      console.log(Object.keys(ob), Object.values(ob));
+      let a = [1, 2, 3, 4];
+      let re = a.pop();
+      console.log(re);
+    </script>
+  </body>
+</html>

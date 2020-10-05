@@ -1,12 +1,14 @@
 h1 {
-    font-size: 20px;
-    border: 5px solid blue;
-    margin: 50px;
-    /* display: inline; */
+  font-size: 20px;
+  border: 5px solid blue;
+  margin: 50px;
+  /* display: inline; */
 }
 h2 {
-    background-color: pink; color: yellow;
+  background-color: pink;
+  color: yellow;
 }
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
 }
