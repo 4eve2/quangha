@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bai tap Array</title>
-    <script src=""></script>
   </head>
 
   <body>
@@ -24,23 +23,23 @@
       }
       //bai 1
       console.log(
-        "//Viết chương trình JavaScript để lấy một phần tử ngẫu nhiên từ một mảng"
+        `//Viết chương trình JavaScript để lấy một phần tử ngẫu nhiên từ một mảng`
       );
       function randomItems(arr) {
         let n = arr.length;
         let random = Math.floor(Math.random() * n);
         return arr[random];
       }
-      let arr = [33, 10, 11, 7, 19, 11, 5, 27, 45, 4, 11, 33, 0, 10];
-      console.log("Mang la:", arr);
+      const arr = [33, 10, 11, 7, 19, 11, 5, 27, 45, 4, 11, 33, 0, 10];
+      console.log(`Mang la: ${arr}`);
       for (let index = 1; index <= 10; index++) {
-        console.log("Phan tu ngau nhien thu", index, "la: ", randomItems(arr));
+        console.log(`Phan tu ngau nhien thu ${index} la: ${randomItems(arr)}`);
       }
-      console.log("");
+      console.log(``);
 
       //bai 2
       console.log(
-        "//Viết chương trình đổi chỗ ngẫu nhiên vị trí của các phần tử trong mảng"
+        `//Viết chương trình đổi chỗ ngẫu nhiên vị trí của các phần tử trong mảng`
       );
       function randomSort(arr) {
         let arr2 = arr.slice();
@@ -55,7 +54,7 @@
         }
         return arr2;
       }
-      console.log("Sap xep ngau nhien mang", arr, "la:\n", randomSort(arr));
+      console.log(`Sap xep ngau nhien mang ${arr} "la:\n", randomSort(arr)`);
       console.log("");
       //tao mang ngau nhien
       function randomArr(n) {
@@ -432,8 +431,9 @@
         "// Viết function chia mảng thành các mảng con có độ dài bằng kích thước (đối số thứ hai) và trả về chúng dưới dạng mảng hai chiều."
       );
       function chunkArrayInGroups(arr, x) {
-        var n = arr.length;
-        if (x <= 0 || n == 0 || (x > 0 && n % x != 0) || x > n) {
+        let n = arr.length;
+        let sub_arr = n % x;
+        if (x <= 0 || n == 0 || x > n) {
           return "FALSE";
         } else {
           let num_row = parseInt(n / x);
@@ -446,6 +446,13 @@
               arr2D[j].push(arr[j * x + i]);
             }
           }
+          if (sub_arr != 0) {
+            let arr1 = [];
+            for (let i = 0; i < sub_arr; i++) {
+              arr1.push(arr[n - sub_arr + i]);
+            }
+            arr2D.push(arr1);
+          }
           return arr2D;
         }
       }
@@ -454,7 +461,7 @@
       let div3 = 3;
       let div4 = 6;
       let arr_1 = ["a", "b", "c", "d"];
-      let arr_2 = [0, 1, 2, 3, 4, 5];
+      let arr_2 = [0, 1, 2, 3, 4, 5, 6];
       let arr_3 = [];
       let arr_4 = ["asd", 5, "", [1, 2, 3, 4], "2", { name: "Ha", age: 26 }];
       console.log(

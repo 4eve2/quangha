@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Customer(name, year, isStatus) {
+        (this.name = name), (this.year = year), (this.isStatus = isStatus);
+      }
+      Customer.prototype.getAge = function () {
+        return 2020 - this.year;
+      };
+      const arr = [
+        new Customer("Hà", 1994, true),
+        new Customer("Anh", 1993, true),
+        new Customer("Banh", 1991, false),
+        new Customer("Đức", 1989, true),
+        new Customer("Cái", 1999, false),
+      ];
+      const arr1 = Object.assign([], arr);
+      console.log(arr);
+      arr1.sort((a, b) => a.name.localeCompare(b.name));
+      console.log(arr1);
+      console.log(`Cac user thoa man yeu cau la:`);
+      arr1.forEach((element) => {
+        if (element.isStatus == true && element.getAge() > 25) {
+          console.log(`${JSON.stringify(element)} ${element.getAge()} tuoi`);
+        }
+      });
+      Customer.prototype.type;
+      arr1[0].type = 1;
+      arr1[1].type = 3;
+      arr1[2].type = 2;
+      arr1[3].type = 1;
+      arr1[4].type = 2;
+      Customer.prototype.getSalary = function () {
+        let sal;
+        switch (this.type) {
+          case 1:
+            sal = 10 * 1200000;
+            break;
+          case 2:
+            sal = 8 * 1200000;
+            break;
+          case 3:
+            sal = 6 * 1200000;
+            break;
+        }
+        return sal;
+      };
+      console.log(`Sap xep theo he so luong:`);
+      arr1.sort((a, b) => a.getSalary() - b.getSalary());
+      arr1.forEach((element) => {
+        console.log(`${JSON.stringify(element)} luong ${element.getSalary()}vnd`);
+      });
+    </script>
+  </body>
+</html>
